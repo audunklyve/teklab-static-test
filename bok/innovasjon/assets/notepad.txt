@@ -1,0 +1,27 @@
+AVATARER
+
+![img](assets/figurer/avatarer/GeirTerje_avatar.png){ .avatar-kapittel-thumbnail }
+
+![img](assets/figurer/avatarer/Lars_avatar.png){ .avatar-kapittel-thumbnail }
+
+![img](assets/figurer/avatarer/Julene_avatar.png){ .avatar-kapittel-julene-thumbnail }
+
+
+FIGURER
+ <figure markdown="span">
+ ![img](assets/figurer/Metodemodeller/5_Steg-light.png#only-light){ .modell-padding }
+ ![img](assets/figurer/Metodemodeller/5_Steg-dark.png#only-dark){ .modell-padding }
+<figcaption>Modell 1: En iterativ designprosess med fem steg basert på Sharp, Rogers og Preece (2019, s. 50-52).</figcaption>
+</figure>
+
+INNRYKK
+{ .innrykk }
+
+LINK I NY FANE
+{target="_blank"}
+
+LINK MED IKON
+[Håndbok i medieinnovasjon <i class="fa fa-youtube-play"></i>](https://www.youtube.com/watch?v=AMV1TapsL2k){target="_blank"}
+
+
+/*[|template_remember|]*/0
