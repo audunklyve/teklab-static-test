@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="nb-NO" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- WP_HEAD() START -->
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Rubik:100,200,300,400,500,600,700,800,900">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Rubik:100,200,300,400,500,600,700,800,900">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Få lyden ut av arkivet og inn i samtida - TekLab</title>
+<meta name="robots" content="follow, index, noarchive, noimageindex, nosnippet">
+<link rel="canonical" href="/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Få lyden ut av arkivet og inn i samtida - TekLab">
+<meta property="og:url" content="/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/">
+<meta property="og:site_name" content="TekLab">
+<meta property="article:section" content="Forskning">
+<meta property="og:updated_time" content="2021-05-15T21:39:46+02:00">
+<meta property="og:image" content="/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink-1024x392.jpg">
+<meta property="og:image:secure_url" content="/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink-1024x392.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="392">
+<meta property="og:image:alt" content="Få lyden ut av arkivet og inn i samtida">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="article:published_time" content="2020-10-19T14:14:48+02:00">
+<meta property="article:modified_time" content="2021-05-15T21:39:46+02:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Få lyden ut av arkivet og inn i samtida - TekLab">
+<meta name="twitter:creator" content="@gulbrandsen">
+<meta name="twitter:image" content="/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink-1024x392.jpg">
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["CollegeOrUniversity","Organization"],"@id":"/teklab-static-test/#organization","name":"TekLab","url":"/teklab-static-test","logo":{"@type":"ImageObject","@id":"/teklab-static-test/#logo","url":"/teklab-static-test/wp-content/uploads/LogoSvart.png","contentUrl":"/teklab-static-test/wp-content/uploads/LogoSvart.png","caption":"TekLab","inLanguage":"nb-NO","width":"2196","height":"2052"}},{"@type":"WebSite","@id":"/teklab-static-test/#website","url":"/teklab-static-test","name":"TekLab","publisher":{"@id":"/teklab-static-test/#organization"},"inLanguage":"nb-NO"},{"@type":"ImageObject","@id":"/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink.jpg","url":"/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink.jpg","width":"2560","height":"979","inLanguage":"nb-NO"},{"@type":"WebPage","@id":"/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/#webpage","url":"/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/","name":"Få lyden ut av arkivet og inn i samtida - TekLab","datePublished":"2020-10-19T14:14:48+02:00","dateModified":"2021-05-15T21:39:46+02:00","isPartOf":{"@id":"/teklab-static-test/#website"},"primaryImageOfPage":{"@id":"/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink.jpg"},"inLanguage":"nb-NO"},{"@type":"Person","@id":"/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/#author","name":"Trym Røed Arvesen","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/58616c7cf51d99615bbb20ad3a123cedd50527c23d2d2217a356e1f2f21e85f4?s=96&d=mm&r=g","url":"https://secure.gravatar.com/avatar/58616c7cf51d99615bbb20ad3a123cedd50527c23d2d2217a356e1f2f21e85f4?s=96&d=mm&r=g","caption":"Trym Røed Arvesen","inLanguage":"nb-NO"},"sameAs":["https://twitter.com/audun.gulbrandsen"],"worksFor":{"@id":"/teklab-static-test/#organization"}},{"@type":"Article","headline":"Få lyden ut av arkivet og inn i samtida - TekLab","datePublished":"2020-10-19T14:14:48+02:00","dateModified":"2021-05-15T21:39:46+02:00","author":{"@id":"/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/#author","name":"Trym Røed Arvesen"},"publisher":{"@id":"/teklab-static-test/#organization"},"name":"Få lyden ut av arkivet og inn i samtida - TekLab","@id":"/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/#richSnippet","isPartOf":{"@id":"/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/#webpage"},"image":{"@id":"/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink.jpg"},"inLanguage":"nb-NO","mainEntityOfPage":{"@id":"/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="alternate" type="application/rss+xml" title="TekLab &raquo; strøm" href="/teklab-static-test/feed/">
+<link rel="alternate" type="application/rss+xml" title="TekLab &raquo; kommentarstrøm" href="/teklab-static-test/comments/feed/">
+<style id="wp-block-library-inline-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}</style>
+<style id="classic-theme-styles-inline-css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #ffffff;--wp--preset--color--contrast: #000000;--wp--preset--color--primary: #9DFF20;--wp--preset--color--secondary: #345C00;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.227), 1.125rem);--wp--preset--font-size--large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.227), 1.875rem);--wp--preset--font-size--x-large: 2.25rem;--wp--preset--font-size--xx-large: clamp(6.1rem, 6.1rem + ((1vw - 0.2rem) * 7.091), 10rem);--wp--preset--font-family--dm-sans: "DM Sans", sans-serif;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: clamp(1.5rem, 5vw, 2rem);--wp--preset--spacing--40: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);--wp--preset--spacing--50: clamp(2.5rem, 8vw, 4.5rem);--wp--preset--spacing--60: clamp(3.75rem, 10vw, 7rem);--wp--preset--spacing--70: clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem);--wp--preset--spacing--80: clamp(7rem, 14vw, 11rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.5rem;}:root :where(.is-layout-grid){gap: 1.5rem;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="oxygen-css" href="/teklab-static-test/wp-content/plugins/oxygen/component-framework/oxygen.css" media="all">
+<link rel="stylesheet" id="bodhi-svgs-attachment-css" href="/teklab-static-test/wp-content/plugins/svg-support/css/svgs-attachment.css" media="all">
+<style id="wpgb-head-inline-css">.wp-grid-builder:not(.wpgb-template),.wpgb-facet{opacity:0.01}.wpgb-facet fieldset{margin:0;padding:0;border:none;outline:none;box-shadow:none}.wpgb-facet fieldset:last-child{margin-bottom:40px;}.wpgb-facet fieldset legend.wpgb-sr-only{height:1px;width:1px}</style>
+<link rel="stylesheet" id="ssp-search-css" href="/teklab-static-test/wp-content/plugins/simply-static-pro/assets/ssp-search.css" media="all">
+<link rel="stylesheet" id="moove_gdpr_frontend-css" href="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/styles/gdpr-main.css" media="all">
+<style id="moove_gdpr_frontend-inline-css">#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:Nunito,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#027bc1;border-color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#027bc1;border:1px solid #027bc1}#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus,#moove_gdpr_cookie_info_bar button.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar button.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #027bc1;-moz-box-shadow:0 0 1px 3px #027bc1;box-shadow:0 0 1px 3px #027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,button.change-settings-button.focus-g,button.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-branding.focus-g span,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main a.focus-g{color:#027bc1}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}</style>
+<script src="/teklab-static-test/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<link rel="https://api.w.org/" href="/teklab-static-test/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="/teklab-static-test/wp-json/wp/v2/artikler/600">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/teklab-static-test/xmlrpc.php?rsd">
+
+
+<link rel="shortlink" href="/teklab-static-test/?p=600">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/teklab-static-test/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fartikler%2Ffa-lyden-ut-av-arkivet-og-inn-i-samtida%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/teklab-static-test/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fartikler%2Ffa-lyden-ut-av-arkivet-og-inn-i-samtida%2F#038;format=xml">
+<style type="text/css">.feedzy-rss-link-icon:after {
+	content: url("/teklab-static-test/wp-content/plugins/feedzy-rss-feeds/img/external-link.png");
+	margin-left: 3px;
+}</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="alternate" type="application/rss+xml" title="Podcast RSS feed" href="/teklab-static-test/feed/podcast">
+
+<script type="text/javascript">(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('/teklab-static-test/?wordfence_lh=1&hid=A822A87CE595F4EF10B35724A3306D19');</script><noscript><style>.wp-grid-builder .wpgb-card.wpgb-card-hidden .wpgb-card-wrapper{opacity:1!important;visibility:visible!important;transform:none!important}.wpgb-facet {opacity:1!important;pointer-events:auto!important}.wpgb-facet *:not(.wpgb-pagination-facet){display:none}</style></noscript>			                <meta name="ssp-config-path" content="/teklab-static-test/wp-content/uploads/simply-static/configs/">
+			
+						<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript>
+<style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style>
+<style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style>
+<style class="wp-fonts-local">@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"DM Sans";font-style:italic;font-weight:400;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Regular-Italic.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"DM Sans";font-style:italic;font-weight:700;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Bold-Italic.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:block;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:block;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Mono";font-style:italic;font-weight:400;font-display:block;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:700;font-display:block;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');font-stretch:normal;}
+@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}</style>
+<link rel="icon" href="/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-32x32.png" sizes="32x32">
+<link rel="icon" href="/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-180x180.png">
+<meta name="msapplication-TileImage" content="/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-270x270.png">
+<link rel="stylesheet" id="oxygen-cache-28-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/28.css?cache=1743676684#038;ver=6.8.1" media="all">
+<link rel="stylesheet" id="oxygen-cache-339-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/339.css?cache=1743676661#038;ver=6.8.1" media="all">
+<link rel="stylesheet" id="oxygen-universal-styles-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/universal.css?cache=1743682180#038;ver=6.8.1" media="all">
+<style id="custom-css-pro">.widget_podcast_playlist {
+    list-style: none;
+}</style><!-- END OF WP_HEAD() -->
+</head>
+<body class="wp-singular artikler-template-default single single-artikler postid-600 wp-embed-responsive wp-theme-oxygen-is-not-a-theme  oxygen-body">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+
+
+
+
+						<header id="_header-20-28" class="oxy-header-wrapper oxy-sticky-header oxy-overlay-header oxy-header"><div id="_header_row-21-28" class="oxygen-hide-in-sticky oxy-header-row"><div class="oxy-header-container">
+<div id="_header_left-22-28" class="oxy-header-left"><a id="link-72-28" class="ct-link" href="/teklab-static-test/"><img id="image-73-28" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAcCAQAAAABUocK4AAAAAnRSTlMAAHaTzTgAAAG5SURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBjmTwAAfQ/XjIAAAAASUVORK5CYII=" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/teklab_logo_svart.png" decoding="async" data-eio-rwidth="2196" data-eio-rheight="2052"><noscript><img id="image-73-28" alt="" src="/teklab-static-test/wp-content/uploads/teklab_logo_svart.png" class="ct-image" data-eio="l"></noscript></a></div>
+<div id="_header_center-25-28" class="oxy-header-center"></div>
+<div id="_header_right-26-28" class="oxy-header-right">
+<nav id="_nav_menu-27-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger">
+<div class="oxy-nav-menu-hamburger-line"></div>
+<div class="oxy-nav-menu-hamburger-line"></div>
+<div class="oxy-nav-menu-hamburger-line"></div>
+</div></div></div>
+<div class="menu-main-menu-container"><ul id="menu-main-menu" class="oxy-nav-menu-list">
+<li id="menu-item-725" class="about-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-725">
+<a href="#">Om TekLab</a>
+<ul class="sub-menu">
+	<li id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a href="/teklab-static-test/om-teklab/">Om TekLab</a></li>
+	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="/teklab-static-test/medlemmer/">Team</a></li>
+	<li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="/teklab-static-test/samarbeidspartnere/">Samarbeidspartnere</a></li>
+</ul>
+</li>
+<li id="menu-item-1181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1181">
+<a href="/teklab-static-test/prosjekter/?_kategori=prototype%2Cmedieproduksjon">Prosjekter</a>
+<ul class="sub-menu">
+	<li id="menu-item-1979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1979"><a href="/teklab-static-test/prosjekter/?_kategori=evaluering">Evalueringer</a></li>
+	<li id="menu-item-1180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1180"><a href="/teklab-static-test/prosjekter/?_kategori=medieproduksjon">Medieproduksjoner</a></li>
+	<li id="menu-item-1826" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1826"><a href="/teklab-static-test/prosjekter/?_kategori=podcast">Podcaster</a></li>
+	<li id="menu-item-225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-225"><a href="/teklab-static-test/prosjekter/?_kategori=prototype">Prototyper</a></li>
+</ul>
+</li>
+<li id="menu-item-4638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4638">
+<a href="/teklab-static-test/books/">Publikasjoner</a>
+<ul class="sub-menu">
+	<li id="menu-item-4639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4639"><a href="/teklab-static-test/books/">Bøker</a></li>
+</ul>
+</li>
+<li id="menu-item-223" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223"><a href="/teklab-static-test/forskning/?_kategori=forskning">Forskning</a></li>
+<li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"><a href="/teklab-static-test/utdanning/?_kategori=utdanning">Utdanning</a></li>
+<li id="menu-item-1710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1710"><a href="/teklab-static-test/events/">Arrangementer</a></li>
+</ul></div></nav><a id="link-247-28" class="ct-link" href="/teklab-static-test/sok/"><img id="image-246-28" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/sok.svg" decoding="async"><noscript><img id="image-246-28" alt="" src="/teklab-static-test/wp-content/uploads/sok.svg" class="ct-image" data-eio="l"></noscript></a>
+</div>
+</div></div>
+<div id="_header_row-74-28" class="oxygen-show-in-sticky-only oxy-header-row"><div class="oxy-header-container">
+<div id="_header_left-75-28" class="oxy-header-left"><a id="link-76-28" class="ct-link" href="/teklab-static-test/"><img id="image-77-28" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAHeAQAAAABSjSvWAAAAAnRSTlMAAHaTzTgAAACGSURBVHja7cExAQAAAMKg9U9tDB+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G3CDQABn/KPWwAAAABJRU5ErkJggg==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" decoding="async" data-eio-rwidth="2560" data-eio-rheight="637"><noscript><img id="image-77-28" alt="" src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" class="ct-image" data-eio="l"></noscript></a></div>
+<div id="_header_center-78-28" class="oxy-header-center"></div>
+<div id="_header_right-79-28" class="oxy-header-right">
+<nav id="_nav_menu-220-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger">
+<div class="oxy-nav-menu-hamburger-line"></div>
+<div class="oxy-nav-menu-hamburger-line"></div>
+<div class="oxy-nav-menu-hamburger-line"></div>
+</div></div></div>
+<div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="oxy-nav-menu-list">
+<li class="about-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-725">
+<a href="#">Om TekLab</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a href="/teklab-static-test/om-teklab/">Om TekLab</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="/teklab-static-test/medlemmer/">Team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="/teklab-static-test/samarbeidspartnere/">Samarbeidspartnere</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1181">
+<a href="/teklab-static-test/prosjekter/?_kategori=prototype%2Cmedieproduksjon">Prosjekter</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1979"><a href="/teklab-static-test/prosjekter/?_kategori=evaluering">Evalueringer</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1180"><a href="/teklab-static-test/prosjekter/?_kategori=medieproduksjon">Medieproduksjoner</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1826"><a href="/teklab-static-test/prosjekter/?_kategori=podcast">Podcaster</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-225"><a href="/teklab-static-test/prosjekter/?_kategori=prototype">Prototyper</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4638">
+<a href="/teklab-static-test/books/">Publikasjoner</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4639"><a href="/teklab-static-test/books/">Bøker</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223"><a href="/teklab-static-test/forskning/?_kategori=forskning">Forskning</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"><a href="/teklab-static-test/utdanning/?_kategori=utdanning">Utdanning</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1710"><a href="/teklab-static-test/events/">Arrangementer</a></li>
+</ul></div></nav><a id="link-248-28" class="ct-link" href="/teklab-static-test/sok/"><img id="image-249-28" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/sok.svg" decoding="async"><noscript><img id="image-249-28" alt="" src="/teklab-static-test/wp-content/uploads/sok.svg" class="ct-image" data-eio="l"></noscript></a>
+</div>
+</div></div>
+<div id="_header_row-122-28" class="oxy-header-row"><div class="oxy-header-container">
+<div id="_header_left-123-28" class="oxy-header-left"><a id="link-124-28" class="ct-link" href="/teklab-static-test/"><img id="image-125-28" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAHeAQAAAABSjSvWAAAAAnRSTlMAAHaTzTgAAACGSURBVHja7cExAQAAAMKg9U9tDB+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G3CDQABn/KPWwAAAABJRU5ErkJggg==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" decoding="async" data-eio-rwidth="2560" data-eio-rheight="637"><noscript><img id="image-125-28" alt="" src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" class="ct-image" data-eio="l"></noscript></a></div>
+<div id="_header_center-126-28" class="oxy-header-center"></div>
+<div id="_header_right-128-28" class="oxy-header-right"><nav id="_nav_menu-127-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow oxy-nav-menu-responsive-dropdowns"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger">
+<div class="oxy-nav-menu-hamburger-line"></div>
+<div class="oxy-nav-menu-hamburger-line"></div>
+<div class="oxy-nav-menu-hamburger-line"></div>
+</div></div></div>
+<div class="menu-mobile-menu-container"><ul id="menu-mobile-menu" class="oxy-nav-menu-list">
+<li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a href="/teklab-static-test/om-teklab/">Om TekLab</a></li>
+<li id="menu-item-727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-727"><a href="/teklab-static-test/medlemmer/">Team</a></li>
+<li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728"><a href="/teklab-static-test/samarbeidspartnere/">Samarbeidspartnere</a></li>
+<li id="menu-item-729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-729"><a href="/teklab-static-test/prototyper/?_kategori=prototype">Prototyper</a></li>
+<li id="menu-item-1712" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1712"><a href="/teklab-static-test/prosjekter/?_kategori=medieproduksjon">Medieproduksjoner</a></li>
+<li id="menu-item-4640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4640"><a href="/teklab-static-test/books/">Bøker</a></li>
+<li id="menu-item-1825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1825"><a href="/teklab-static-test/prosjekter/?_kategori=podcast">Podcaster</a></li>
+<li id="menu-item-730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-730"><a href="/teklab-static-test/forskning/?_kategori=forskning">Forskning</a></li>
+<li id="menu-item-731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-731"><a href="/teklab-static-test/utdanning/?_kategori=utdanning">Utdanning</a></li>
+<li id="menu-item-1713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1713"><a href="/teklab-static-test/events/">Arrangementer</a></li>
+<li id="menu-item-1058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1058"><a href="/teklab-static-test/sok/">Søk</a></li>
+</ul></div></nav></div>
+</div></div></header>
+				<script type="text/javascript">jQuery(document).ready(function() {
+				var selector = "#_header-20-28",
+					scrollval = parseInt("40");
+				if (!scrollval || scrollval < 1) {
+										if (jQuery(window).width() >= 1121){
+											jQuery("body").css("margin-top", jQuery(selector).outerHeight());
+						jQuery(selector).addClass("oxy-sticky-header-active");
+										}
+									}
+				else {
+					var scrollTopOld = 0;
+					jQuery(window).scroll(function() {
+						if (!jQuery('body').hasClass('oxy-nav-menu-prevent-overflow')) {
+							if (jQuery(this).scrollTop() > scrollval 
+																) {
+								if (
+																		jQuery(window).width() >= 1121 && 
+																		!jQuery(selector).hasClass("oxy-sticky-header-active")) {
+									if (jQuery(selector).css('position')!='absolute') {
+										jQuery("body").css("margin-top", jQuery(selector).outerHeight());
+									}
+									jQuery(selector)
+										.addClass("oxy-sticky-header-active")
+																	}
+							}
+							else {
+								jQuery(selector)
+									.removeClass("oxy-sticky-header-fade-in")
+									.removeClass("oxy-sticky-header-active");
+								if (jQuery(selector).css('position')!='absolute') {
+									jQuery("body").css("margin-top", "");
+								}
+							}
+							scrollTopOld = jQuery(this).scrollTop();
+						}
+					})
+				}
+			});</script><section id="section-3-274" class=" ct-section"><div class="ct-section-inner-wrap">
+<h1 id="headline-4-274" class="ct-headline"><span id="span-14-274" class="ct-span">Få lyden ut av arkivet og inn i samtida</span></h1>
+<div id="new_columns-82-339" class="ct-new-columns">
+<div id="div_block-83-339" class="ct-div-block"><div id="text_block-5-274" class="ct-text-block"><span id="span-16-274" class="ct-span">Kva skjer når ein tek NRKs radioklipp ut av arkivet og inn i ei digital samtidsoppleving i eit av Noregs mest ikoniske naturområder? Og kva kan det bety for samfunnsrelevansen til eit mediearkiv? Dette er tema for eit nytt forskings- og utviklingsprosjekt ved Høgskulen i Volda.</span></div></div>
+<div id="div_block-84-339" class="ct-div-block"></div>
+</div>
+<div id="new_columns-8-274" class="ct-new-columns">
+<div id="div_block-9-274" class="ct-div-block">
+<picture><source type="image/webp" data-srcset="/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink.jpg.webp"><img id="image-12-274" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAALeAQAAAABjZTFLAAAAAnRSTlMAAHaTzTgAAADCSURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+DezHAABKpfh/AAAAABJRU5ErkJggg==" class="ct-image lazyload" data-eio="p" data-src="/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink.jpg" decoding="async" data-eio-rwidth="2560" data-eio-rheight="979"></picture><noscript><img id="image-12-274" alt="" src="/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink.jpg" class="ct-image" data-eio="l"></noscript>
+<div id="text_block-87-339" class="ct-text-block"><span id="span-88-339" class="ct-span">Dovrefjell med Snøhetta (2286 moh.) har spela ei sentral rolle i norsk nasjonsbygging, og dannar no utgangspunkt for eit lokativt mediedesign ved Høgskulen i Volda. Foto: Rebecca Nedregotten Strand.</span></div>
+<div id="code_block-122-339" class="ct-code-block"></div>
+</div>
+<div id="div_block-10-274" class="ct-div-block">
+<div id="code_block-118-339" class="ct-code-block">
+<!-- Start Repeater -->
+<div class="byline__container">
+        	<div class="byline__item">	
+			<div class="byline__img">
+				 <picture><source type="image/webp" data-srcset="/teklab-static-test/wp-content/uploads/Bilete_3-scaled-1-150x150.jpg.webp"><img width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWAQMAAAAGz+OhAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABpJREFUGBntwTEBAAAAwiD7p14ND2AAAMC9AAu4AAHGdJuwAAAAAElFTkSuQmCC" class="attachment-50x50 size-50x50 wp-post-image lazyload" alt="Bilete 3 scaled 1" decoding="async" title="Rebecca Nedregotten Strand 1" data-eio="p" data-src="/teklab-static-test/wp-content/uploads/Bilete_3-scaled-1-150x150.jpg" data-eio-rwidth="150" data-eio-rheight="150"></picture><noscript><img width="50" height="50" src="/teklab-static-test/wp-content/uploads/Bilete_3-scaled-1-150x150.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="Bilete 3 scaled 1" decoding="async" title="Rebecca Nedregotten Strand 1" data-eio="l"></noscript>			</div>
+			<div class="byline__text">
+				 <span class="byline__name">Rebecca Nedregotten Strand</span><br>
+				 <span class="byline__role"></span>
+			</div>
+		
+        	
+		<span class="byline__role">Tekst/foto</span>
+    <!--<p><<!--?php echo esc_html( $term->description ); ?></p> -->
+		</div>
+	
+    </div>
+<!-- End Repeater -->
+</div>
+<div id="text_block-90-339" class="ct-text-block">Publisert: <span id="span-91-339" class="ct-span">19. oktober 2020</span>
+</div>
+<div id="code_block-121-339" class="ct-code-block"></div>
+</div>
+</div>
+<div id="new_columns-17-274" class="ct-new-columns">
+<div id="div_block-18-274" class="ct-div-block">
+<div id="text_block-79-339" class="ct-text-block"><span id="span-80-339" class="ct-span"><p>PhD-kandidat Rebecca Nedregotten Strand har fått stipend frå Høgskulen i Volda til prosjektet «Mediedesign på høgfjellet. NRKs radioarkiv i lokasjonsbasert digital kulturarvsformidling». Prosjektperioden er 4-årig. Det skal utviklast ei mobiltilpassa digital nettside der kuraterte lydklipp blir presenterte på utvalde lokasjonar langs Kongevegen over Dovrefjell og testa av ulike brukargrupper. Med bruk av innovasjonspedagogiske metodar skal høgskulestudentar ta del i utvikling av mediedesign og utprøving på ei av brukargruppene.</p>
+<p>&nbsp;</p>
+<p><strong>I kongelege fotspor</strong></p>
+<p>20.mai 1814 erklærte Riksforsamlinga på Eidsvoll seg «Enig og tro til Dovre faller» (1814, 2020).  Fjella der oppe står tilsynelatande framleis trygt, og over dei strekker Kongevegen seg. Den vart etablert som offentleg køyreveg frå byrjinga av 1700-talet og er forgjengaren til dagens E6 mellom Dovre og Oppdal.</p>
+<p>Ordren om å heve vegstandarden kom frå København. Det skulle bli lettare å transportere post, menneske og varer mellom dei norske landsdelane. I 1685 hadde dansk-norske kong Christian V kryssa Dovrefjell til hest. I 1704 kunne kong Frederik IV reise same strekning i tohjulsvogna chaise, medan kong Christian VI sat i firehjulsvogna karosse på Kongevegen i 1733 og hadde med seg eit fylgje på rundt 200 personar. Blant dei var dronning, svigermor, suppekokkar og posteimakar.</p>
+<figure id="attachment_602" aria-describedby="caption-attachment-602" style="width: 2048px" class="wp-caption alignnone"><picture><source sizes="(max-width: 2048px) 100vw, 2048px" type="image/webp" data-srcset="/teklab-static-test/wp-content/uploads/Bilete_2.png.webp 2048w, /teklab-static-test/wp-content/uploads/Bilete_2-300x169.png.webp 300w, /teklab-static-test/wp-content/uploads/Bilete_2-1024x576.png.webp 1024w, /teklab-static-test/wp-content/uploads/Bilete_2-768x432.png.webp 768w, /teklab-static-test/wp-content/uploads/Bilete_2-1536x864.png.webp 1536w"><img decoding="async" class="wp-image-602 size-full lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4AQMAAADSHVMAAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAESSURBVBgZ7cEBDQAAAMIg+6d+DwcMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgVPjlAAEQFczxAAAAAElFTkSuQmCC" alt="" width="2048" height="1152" data-eio="p" data-src="/teklab-static-test/wp-content/uploads/Bilete_2.png" data-srcset="/teklab-static-test/wp-content/uploads/Bilete_2.png 2048w, /teklab-static-test/wp-content/uploads/Bilete_2-300x169.png 300w, /teklab-static-test/wp-content/uploads/Bilete_2-1024x576.png 1024w, /teklab-static-test/wp-content/uploads/Bilete_2-768x432.png 768w, /teklab-static-test/wp-content/uploads/Bilete_2-1536x864.png 1536w" data-sizes="auto" data-eio-rwidth="2048" data-eio-rheight="1152"></picture><noscript><img decoding="async" class="wp-image-602 size-full" src="/teklab-static-test/wp-content/uploads/Bilete_2.png" alt="" width="2048" height="1152" srcset="/teklab-static-test/wp-content/uploads/Bilete_2.png 2048w, /teklab-static-test/wp-content/uploads/Bilete_2-300x169.png 300w, /teklab-static-test/wp-content/uploads/Bilete_2-1024x576.png 1024w, /teklab-static-test/wp-content/uploads/Bilete_2-768x432.png 768w, /teklab-static-test/wp-content/uploads/Bilete_2-1536x864.png 1536w" sizes="(max-width: 2048px) 100vw, 2048px" data-eio="l"></noscript>
+<figcaption id="caption-attachment-602" class="wp-caption-text">På Kongevegen over Dovrefjell kunne ein køyre med firehjulsvogn på 1700-talet. Etter kongeleg ordre frå København vart den oppgradert til offentleg køyreveg. Foto: Rebecca Nedregotten Strand.</figcaption></figure>
+<div class="et_pb_section et_pb_section_7 et_pb_with_background et_section_regular">
+<div class=" et_pb_row et_pb_row_4">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_6">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_6">
+<p>Fleire kongelege fylgde, men med nye og lettare trasear grodde den opphavlege vegen gradvis att og vart redusert til ein sti. No restaurerer Vegvesenet Kongevegen over Dovrefjell, med mål om å gjere den til eit kulturhistorisk besøksmål for dei som vil vandre i kongars fotspor (Johansson, 2020).</p>
+<p><strong> </strong></p>
+<p><strong>Dovre som nasjonsbyggar</strong></p>
+<p>– <em>Det snjoad og haglad, og byrtingar og torebrak verkad som trollskap. Bull var fyrste mannen paa toppen, og syni derifraa var fjetrande</em>. (Vik, 1890)</p>
+<p>Med to enkle setningar skildrar biograf Oddmund Vik korleis Ole Bull erobrar fjellet Snøhetta (2286 moh.). Slik føyer fiolinisten seg inn i ei rekke av nasjonalheltar som har sett att sine spor på Dovrefjell og etsa landskapet inn i historia om Noreg. Nesten 1000 år tidlegare vart Harald Hårfagre kasta ut heimafrå og fostra opp av jøtulen på Dovre. Seinare fortel myten at han møter Snøfrid på garden Tofte i Dovrebygda (Steinsland, 2014). Han har nesten lukkast med å samle Noreg til eitt rike, men manglar støtta frå det samiske folket. Dottera til samekongen Svåse er så vakker at Hårfagre ikkje kan leve utan henne. Dei gifter seg og får fire søner.</p>
+<p>Sogene om Dovre si rolle i bygginga av nasjonen Noreg samla professor i religionshistorie Gro Steinsland i boka «Dovrefjell i tusen år. Mytene, historien og diktningen». I føreordet skriv ho: «Med undring oppdaget jeg at temaet Dovrefjell henger sammen med hele norgeshistorien» (Steinsland, 2014).</p>
+<p>Dovrefjell si viktige rolle i noregshistoria gjer at dette fjellområdet også har vore rikt representert i NRK sine radiosendingar dei siste 90 åra. Opptak ein kan lytte til via Nasjonalbiblioteket sine nettsider.</p>
+<p><em>Men kva utbytte gjev det når klippa ikkje er sett inn i ein kontekst og ein ikkje har moglegheit til å gjere noko meir enn å høyre på dei?<br>
+</em></p>
+<p>&nbsp;</p>
+<p><strong>Digitalt tilgjengeleg, og kva så?</strong></p>
+<p>Samfunnet brukar store ressursar på å digitalisere arkivmateriale; bøker, aviser, tidsskrift, film, lyd med meir. I oktober 2019 smila Aslak Sira Myhre breitt saman med Trine Schei Grande. Direktøren for Nasjonalmuseet delte nyheita om at den dåverande kulturministeren lova dei ei auke på 87 millionar kroner årleg til dette føremålet (Nasjonalbiblioteket, 2019).</p>
+<p><em>Samstundes som at meir stoff blir tilgjengeleg for fleire, er potensialet for å utvikle innhaldet og tilføre det meirverdi utover det reint arkivfaglege i liten grad utnytta.</em></p>
+<p>Sidan 2000 har Nasjonalbiblioteket samarbeida med NRK om å sikre deira radioarkiv for framtida gjennom digitalisering. I 2013 signerte partane også ein avtale om publisering av radiolyden, medan allmennkringkastaren beheld alle opphavs-, utøvar- og produsentrettar (Nasjonalbiblioteket N. o., 2013).</p>
+<p>Under punktet <em>NBs forpliktelser </em>lovar arkivinstitusjonen mellom anna å fjerne publisert innhald omgåande dersom NRK ber om det, dei skal ikkje redigere i programma og berre gjere dei tilgjengelege som strøyming. Du som brukar kan ikkje laste ned klippa eller gjere deg nytte av dei på annan måte enn ved rein lytting. Det same gjeld for videoarkivet i NRK TV.</p>
+<p>Publikum får berre sjå og ikkje røre. Her er det i tillegg store mengder materiale dei heller aldri får sett, som Ronny Spaans nyleg setje fokus på med teksten <a href="https://www.dagogtid.no/kommentarar/nrkklassikarane-som-forsvann-6.3.17051.292509683a">“NRK-klassikarane som forsvann”</a> i Dag og Tid. Frå nyttår 2020 vart 8000 av 17 000 timar med TV-arkiv fjerna frå nettspelaren grunna ei konflikt med opphavsorganisasjonen Norwaco.</p>
+<p><em>Kva taper vi? Kva om ein i staden opna opp og gav folk moglegheit til å vere kreative med arkivmaterialet?</em></p>
+<p>BBC var meir generøse med pilotprosjektet <em>The BBC Creative Archive</em> i 2005, då dei tilgjengeleggjorde 500 lydspor, videoklipp og foto for ikkje-kommersiell bruk (BBC, 2014). Utfordringane knytt til denne type publisering er mange, økonomiske, juridiske, praktiske og politiske, som Karl Knapskog gjer greie for i sin artikkel <em>Archives in Public Service</em> (Knapskog, 2010). Samstundes vil det vere eit viktig bidrag til å synleggjere arkivet sin kulturhistoriske relevans.</p>
+<p><em>For det er jo vår felles historie det er tale om. 90 år som rommar forteljinga om landet vårt, og oss alle:</em></p>
+<blockquote><p><em>The way in which PSBs manage their archives on behalf of the wider community<br>
+</em><em>is obviously a matter of great cultural importance. This is not just a question of<br>
+</em><em>making archive material a vital part of cultural production, it is also a question<br>
+</em><em>of making this material more accessible by way of contextualisation, new<br>
+</em><em>perspectives and innovative storytelling. </em>(Knapskog, 2010)</p></blockquote>
+<p>&nbsp;</p>
+<p>I 2016 skapte underteikna TV-serien «Landet frå lufta». Som tilsett i NRK kunne eg bruke radioarkivet og oppdaga ein skatt. Alle videoopptaka var gjort med helikopter, difor måtte heile lydsporet konstruerast i etterarbeid. I seks program vart samtidsbilete av Noreg kombinert med historiske lydopptak.</p>
+<p>I dette møtepunktet mellom fortid og notid skjedde det noko interessant. Bodskapen i det som vart sagt, vart på eit vis forsterka; Video av ein fredeleg fjord med rassikra fjellsider møtte stemmene til overlevande frå Tafjordulukka i 1934 der 40 menneske miste livet. På Dovrefjell var sjåarane med og sveva over Snøhetta, medan dei høyrde oberst Ole Reistad sin tale frå Little Norway, 17.mai, 1943<em> (NRK, 2016). </em>Denne erfaringa er bakgrunnen for dette PhD-prosjektet.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="et_pb_section et_pb_section_8 et_pb_with_background et_section_regular">
+<div class=" et_pb_row et_pb_row_5">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_7">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_7">
+<p><strong>Kva skjer når ein tek lyden ut av arkivet og inn i samtida?</strong></p>
+<p>Eit enkelt søk på ordet <em>Dovre</em> i <a href="https://www.nb.no/nbsok/search?action=search&amp;mediatype=radio">NRKs radioarkiv</a> gjev 87 resultat, medan <em>Dovrefjell</em> gjev 28 resultat. Dersom ein utvidar søket til konkrete stadar knytte til område som t.d. Snøhetta, Hjerkinn eller Fokstua sit ein til slutt på fleire hundre lydklipp. Få andre allmennkringkastarar i verda har produsert radio kontinuerleg over ein like lang periode som NRK. Meir enn 100 000 opptak frå 1930 og fram til vår tid er digitalt tilgjengelege på Nasjonalbiblioteket sine nettsider (Nasjonalbiblioteket, 2020).</p>
+<p>Dette prosjektet vil kuratere ein liten del av det enorme materialet og undersøke korleis ein gjennom digital lokasjonsbasert formidling kan augmentere kulturhistoria langs traseen Kongevegen over Dovrefjell. Kan materialet på denne måten få ny relevans og bidra til kunnskapsbygging? Korleis vil det treffe utvalde brukargrupper? Og kan ein ved å designe radioarkiv på denne måten bidra til bevaring av sårbare verneområde, og samstundes styrke mediearkivet si samfunnsrolle?</p>
+<p>&nbsp;</p>
+<p><strong>Mediedesign</strong></p>
+<p>For å undersøke dette blir det utvikla ei mobiltilpassa nettside der ein ved hjelp av visuell kommunikasjon gjer lyden og opplevinga valbar for brukargruppene. Denne metoden blir kalla «mediedesign» ( (Liestøl, 2009), (Fagerjord, 2012), (Nyre, 2014)). Som Lars Nyre gjer greie for i artikkelen «Tre spørsmål om metodeutvikling i medievitskapen» (Nyre, 2020)<em>, </em>designar ein eksperimentelle prototypar og let ulike brukargrupper teste innhaldet. På denne måten er medieforskarar sjølve bidragsytarar til å utvikle nye mediar.</p>
+<figure id="attachment_603" aria-describedby="caption-attachment-603" style="width: 1000px" class="wp-caption alignnone"><picture><source sizes="(max-width: 1000px) 100vw, 1000px" type="image/webp" data-srcset="/teklab-static-test/wp-content/uploads/Bilete_4.png.webp 1000w, /teklab-static-test/wp-content/uploads/Bilete_4-188x300.png.webp 188w, /teklab-static-test/wp-content/uploads/Bilete_4-641x1024.png.webp 641w, /teklab-static-test/wp-content/uploads/Bilete_4-768x1227.png.webp 768w, /teklab-static-test/wp-content/uploads/Bilete_4-961x1536.png.webp 961w"><img decoding="async" class="wp-image-603 size-full lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAY+AQMAAADhMpYyAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAADaSURBVBgZ7cExAQAAAMIg+6deCy9gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARwESsQABoQsgLAAAAABJRU5ErkJggg==" alt="" width="1000" height="1598" data-eio="p" data-src="/teklab-static-test/wp-content/uploads/Bilete_4.png" data-srcset="/teklab-static-test/wp-content/uploads/Bilete_4.png 1000w, /teklab-static-test/wp-content/uploads/Bilete_4-188x300.png 188w, /teklab-static-test/wp-content/uploads/Bilete_4-641x1024.png 641w, /teklab-static-test/wp-content/uploads/Bilete_4-768x1227.png 768w, /teklab-static-test/wp-content/uploads/Bilete_4-961x1536.png 961w" data-sizes="auto" data-eio-rwidth="1000" data-eio-rheight="1598"></picture><noscript><img decoding="async" class="wp-image-603 size-full" src="/teklab-static-test/wp-content/uploads/Bilete_4.png" alt="" width="1000" height="1598" srcset="/teklab-static-test/wp-content/uploads/Bilete_4.png 1000w, /teklab-static-test/wp-content/uploads/Bilete_4-188x300.png 188w, /teklab-static-test/wp-content/uploads/Bilete_4-641x1024.png 641w, /teklab-static-test/wp-content/uploads/Bilete_4-768x1227.png 768w, /teklab-static-test/wp-content/uploads/Bilete_4-961x1536.png 961w" sizes="(max-width: 1000px) 100vw, 1000px" data-eio="l"></noscript>
+<figcaption id="caption-attachment-603" class="wp-caption-text">Kartet viser Kongevegens trasé over Dovrefjell som blå stipla linje. Kjelde: www.kongevegenoverdovrefjell.no. Design: Trollbinde.</figcaption></figure>
+</div>
+<p>Kongevegen over Dovrefjell er eit avgrensa geografisk område. Her er ei rekke kulturminne og komplekse informasjonssystem i form av skilt, stimerking, monument og liknande. Alle desse tilfører brukarane noko utover det å bevege seg i naturen. Kva skjer dersom ein legg til eit ekstra lag? Ved å tilby brukargruppene lokasjonsbasert innhald i form av lydklipp formidla på ei mobiltilpassa nettside, augmenterer ein opplevinga av landskapet og skaper ei såkalla audio augmented reality (AAR) (Bederson, 1995). Målsetjinga er å utvikle eit audiovisuelt brukargrensesnitt som gjev brukarane ei best mogleg samstundes oppleving av det digitale og visuelle landskapet.</p>
+<p>&nbsp;</p>
+<p><strong>Mediedesign til fots, i kontorstolen og på skinner</strong></p>
+<p>Korleis er det å gå på Kongevegen og oppleve den audiovisuelle formidlinga? Kva skjer med opplevinga dersom ein sit på eit kontor når ein prøver den ut? Og kva med ein togpassasjer, som ser ut på Dovrefjell frå ein kupé? Korleis skaper ein eit tilbod som fungerer for henne?</p>
+<p>Tre ulike brukargrupper skal teste tre mediedesign. Design 1 og 2 er det kandidaten sjølv som skaper, medan design 3 blir utvikla av studentar ved Høgskulen i Volda.</p>
+<ul>
+<li>Design 1: <strong>Turgåarar på sjølve Kongevegen</strong><br>
+Stadsensitiv formidling – lyd blir tilgjengeleg på spesifikke lokasjonar langs ein etablert sti. Mobiltilpassa nettside med visuelle verkemiddel som foto, video og illustrasjon. GPS-sporing.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Design 2: <strong>Ekspertar tilsett i allmennkringkastings-selskap<br>
+</strong>Mobiltilpassa nettside med visuelle verkemiddel som gjev brukarane ei oppleving av å vere på Kongevegen, t.d. med bruk av gyrostabiliserte opptak frå vandring på heile traseen, drone e.l. Arkivlyden er ein integrert del av denne designen.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Design 3: <strong>Passasjerar på toget mellom Dombås og Oppdal<br>
+</strong>Stadsensitiv formidling – lyd blir tilgjengeleg på spesifikke lokasjonar langs toglinjas trasé. Mobiltilpassa nettside med visuelle verkemiddel som foto, video og illustrasjon.</li>
+</ul>
+<p>&nbsp;</p>
+</div>
+<p>Til alle design blir det kuratert lyd frå NRKs radoarkiv etter tre sjangerkriterier, basert på korleis dei kan passe til utvalde lokasjonar langs traseen: Det skal brukast klipp frå opptak gjort på Dovrefjell som t.d. <em>Pilegrimer på Dovrefjell</em>, NRK Radio 1995, klipp frå reportasjar om nasjonalsymbolet Dovrefjell som t.d. <em>Grunnloven  – urokkelig som Dovrefjell?, </em>NRK Radio 1989 og klipp frå opptak som er tolkingar av Dovrefjell, dvs. kunstnarlege framstillingar, t.d. <em>Avduking av Vinjemonumentet på Hjerkinn, </em>NRK Radio, 1960 med utdrag frå Aa.O.Vinjes <em>Ferdaminne frå sumaren 1860.</em></p>
+<p>Når klipp og lokasjon er valt, blir dei tilgjengeleggjorde på ei mobiltilpassa nettside. Her brukar ein visuelle verkemiddel som foto, video, illustrasjon og tekst for å kommunisere med brukarane, freiste dei og tydeleggjere kva dei må gjere for å oppleve formidlinga. Designa er tilpassa kvar brukargruppe. Dei visuelle verkemidla utvikla for dei som faktisk går på Kongevegen, må til dømes vere heilt annleis enn opplevinga ein skaper for dei som skal oppleve den frå eit kontor. Målet er at dei skal tilføre noko, ikkje slå i hel det eksisterande landskapet.</p>
+<p>Brukargruppe 1 skal prøve ut mediedesign 1 medan dei sjølve går traseen. Frå desse samlar ein også inn kvantitative data i form av GPS-sporing for å sjå om designen kan bidra til å styre ferdsle og såleis stimulere til vern av sårbare natur- og kulturminner.</p>
+<p>For brukargruppe 2 blir truleg den visuelle delen av nettsida ekstra viktig. Dette er tilsette i nordiske allmennkringkastingsselskap som gjer utprøvinga på sine kontor. Målsetjinga er å få meir kunnskap om korleis dei opplever denne bruken av materiale frå mediearkiv som eit grep i formidling av kulturhistorie og kva potensiale dei ser overføring frå prototype til reelt konsept.</p>
+<p>Båe desse brukargruppene blir intervjua og fyller ut evalueringsskjema rett etter at dei har prøvd ut mediedesignen.</p>
+<p>&nbsp;</p>
+<p><strong>Innovasjonspedagogikk – studentar bidreg også</strong></p>
+<p>Prosjektet har også eit element av innovasjonspedagogikk. Denne tilnærminga inneber at ein vågar å gje studentane rom for praktisk eksperimentering og såleis ruste dei for ein mediekvardag i kontinuerleg endring (Darsø 2019).</p>
+<p>Mediedesign 2 er det studentane som skal utvikle og prøve ut på reisande med Dovrebanen mellom Dombås og Oppdal. Desse har utsikt til Kongevegen frå toget. Studentane kuraterer lydklipp, vel ut lokasjonar og designar det visuelle innhaldet til den mobiltilpassa nettsida. Sjølve gjennomfører dei også utprøvinga, møter brukarane, samlar inn data frå dei og analyserer desse. I utviklinga av dette pedagogiske opplegget vil ein hauste erfaringar frå den meir enn ti år lange erfaringa med innovasjonspedagogikk for studentar i medie- og interaksjonsdesign ved Universitetet i Bergen (Nyre, 2019).</p>
+<p>Planen er å gjennomføre undervisninga på to ulike kull. Såleis får ein empirisk materiale til å utvikle det pedagogiske opplegget, samt moglegheit til å gjere komparative analysar av innhaldet og utprøvinga av dette.</p>
+<p>Etter at mediedesigna er utvikla og prøvd ut på brukargruppene, blir det gjort kritiske evalueringar av prosess, innhald og utprøving. Avhandlinga er artikkelbasert og skal etter planen ferdigstillast hausten 2024. Prosjektet vil vere knytt opp til forskingsgruppa for medieutvikling ved Høgskulen i Volda, samt forskingsmiljøet til Universitetet i Bergen ved Media City Bergen.</p>
+</div>
+<figure id="attachment_604" aria-describedby="caption-attachment-604" style="width: 1024px" class="wp-caption alignnone"><picture><source sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" data-srcset="/teklab-static-test/wp-content/uploads/Bilete_5-1024x576.png.webp 1024w, /teklab-static-test/wp-content/uploads/Bilete_5-300x169.png.webp 300w, /teklab-static-test/wp-content/uploads/Bilete_5-768x432.png.webp 768w, /teklab-static-test/wp-content/uploads/Bilete_5-1536x864.png.webp 1536w, /teklab-static-test/wp-content/uploads/Bilete_5.png.webp 2048w"><img decoding="async" class="wp-image-604 size-large lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAJAAQMAAAApW4aWAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAABeSURBVBgZ7cEBAQAAAIKg/q92SMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB7ASJPAAHgYmGGAAAAAElFTkSuQmCC" alt="" width="1024" height="576" data-eio="p" data-src="/teklab-static-test/wp-content/uploads/Bilete_5-1024x576.png" data-srcset="/teklab-static-test/wp-content/uploads/Bilete_5-1024x576.png 1024w, /teklab-static-test/wp-content/uploads/Bilete_5-300x169.png 300w, /teklab-static-test/wp-content/uploads/Bilete_5-768x432.png 768w, /teklab-static-test/wp-content/uploads/Bilete_5-1536x864.png 1536w, /teklab-static-test/wp-content/uploads/Bilete_5.png 2048w" data-sizes="auto" data-eio-rwidth="1024" data-eio-rheight="576"></picture><noscript><img decoding="async" class="wp-image-604 size-large" src="/teklab-static-test/wp-content/uploads/Bilete_5-1024x576.png" alt="" width="1024" height="576" srcset="/teklab-static-test/wp-content/uploads/Bilete_5-1024x576.png 1024w, /teklab-static-test/wp-content/uploads/Bilete_5-300x169.png 300w, /teklab-static-test/wp-content/uploads/Bilete_5-768x432.png 768w, /teklab-static-test/wp-content/uploads/Bilete_5-1536x864.png 1536w, /teklab-static-test/wp-content/uploads/Bilete_5.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" data-eio="l"></noscript>
+<figcaption id="caption-attachment-604" class="wp-caption-text">Ein pilegrim har lagt att eit skjell på Allmannrøysa. Eit døme på det komplekse informasjonssystemet ein finn langs Kongevegen. Foto: Rebecca Nedregotten Strand.</figcaption></figure>
+</div>
+<div class="et_pb_section et_pb_section_16 et_pb_with_background et_section_regular">
+<div class=" et_pb_row et_pb_row_13">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_21">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_24">
+<p><strong>Kan moderne mediedesign bidra til bevaring av kulturhistoria?</strong></p>
+<p>Har lokasjonsbasert gjenbruk av mediearkiv potensiale til å bidra dobbelt til å bevare og formidle kulturhistorie? Gjennom kuratering lyftar ein fram utvald materiale frå arkiva og gjev det ny relevans. Dette kan auke forståinga for kvifor det er viktig å bevare arkivmateriale, gje mediearkiva relevans i samtida og også gje oss utvida samfunnsforståing og nye perspektiv. Samstundes kan det representere nye formidlingsmoglegheiter for kulturarvsinstitusjonane.</p>
+<p>Ei rekke kulturminne og store delar av kulturhistoria blir ikkje formidla i det heile, fordi ein manglar folk og ressursar. Dersom dei blir frigjorde for ikkje-kommersielle aktørar, kan mediearkiva bli ein utømeleg innhaldsbank. Med den rette teknologien vil dei kunne vere ein enkel og kostnadseffektiv måte å nå ut til publikum på, spreie kunnskap og motivere til vidare vern. Føresetnaden er sjølvsagt at ein er kjeldekritisk og medviten om at ingen er feilfrie, heller ikkje journalistane som står bak innhaldet i arkiva. Det representerer ikkje alltid fakta og sanning, men plassert i den rette konteksten er moglegheitene for kreativ etterbruk endelause.</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="et_pb_section et_pb_section_17 et_pb_with_background et_section_regular">
+<div class=" et_pb_row et_pb_row_14">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_22">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_25">
+<h3>Referansar</h3>
+</div>
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_26">
+<p>BBC    <em>BBC Creative Archive pilot.</em> 2014. http://www.bbc.co.uk/creativearchive/ (lasta ned I september 2020).</p>
+<p>Bederson, B. B. “Audio Augmented Reality: A Prototype Automated Tour Guide.” <em>Chi´95 Mosaic of Creativity</em>, 1995: 210-211.</p>
+<p>Darsø, L. <em>Innovationspædagogik. Kunsten at fremelske innovationskompetence.</em> City, 2019</p>
+<p>Eidsvoll 1814. <em>1814 på 1, 2, 3.</em> 2020. https://eidsvoll1814.no/1-2-3.</p>
+<p>Fagerjord, A. “Design som medievitenskapelig metode.” <em>Norsk medietidsskrift </em>(https://doi.org/10.18261/issn.0805-9535-2018-01-04) 1, no. 25 (2012): 1-19.</p>
+<p>Johansson, M. <em>Fra forprosjekt til hovedprosjekt Kongevegen over Dovrefjell.</em> 2020. https://www.kongevegenoverdovrefjell.no/prosjektet</p>
+<p>Knapskog, K. “Archives in public service.” <em>Critical Studies in Television</em>, 2010: 20-33</p>
+<p>Liestøl, G. “Situated Simulations: A Prototyped Augmented Reality Genre for LEarning on the IPhone.” <em>International Journal of Interactive Mobile Technologies 3</em> (Special Issue IMCL2009), 2009.</p>
+<p>Nasjonalbiblioteket. <em>Kringkasting.</em> 2020. https://www.nb.no/samlingen/kringkasting/.</p>
+<p>Nasjonalbiblioteket. <em>Nasjonalbiblioteket får 87 millionar kroner meir årleg til digitalisering.</em> Oktober 7, 2019. https://www.nb.no/artikler/nasjonalbiblioteket-far-87-millionar-kroner-meir-arleg-til-digitalisering/</p>
+<p>Nasjonalbiblioteket, NRK og. “Avtale om publisering av innhold fra Det Digitale Radioarkivet (DRA) på nb.no.” <em>nb.no.</em> februar 28, 2013. https://www.nb.no/artikler/nasjonalbiblioteket-far-87-millionar-kroner-meir-arleg-til-digitalisering/ (lasta ned i september 2020)</p>
+<p>NRK. <em>NRK TV.</em> 2016. https://tv.nrk.no/serie/landet-fraa-lufta/sesong/1/episode/6/avspiller (lasta ned i september 2020)</p>
+<p>Nyre, L. <em>Studenten som deltakar i staden for tilskodar.</em> september 26, 2019. https://pahoyden.no/innovasjon – innovasjonspedagogikk – mcb/kronikk – studenten – som – deltakar – i – staden – for – tilskodar/406907 26.09.19 (lasta ned i september 2020)</p>
+<p>Nyre, L. “Tre spørsmål om metodeutvikling i medievitskapen.” <em>Norsk medietidsskrift 01/2020 </em>(https://www.idunn.no/nmt/2020/01/tre_spoersmaal_om_metodeutvikling_i_medievitskapen) 27 (2020).</p>
+<p>Nyre, Lars. “Media design method. Combining media studies with design science to make new media. .” <em>Journal of Media Innovations. Vol 1 (1)</em>, 2014.</p>
+<p>Steinsland, G. <em>Dovrefjell i tusen år. Mytene, historien og diktningen.</em> Bergen: Vigmostad &amp; Bjørke, 2014</p>
+</div>
+</div>
+</div>
+</div>
+</span></div>
+<div id="code_block-97-339" class="ct-code-block"><hr></div>
+<div id="text_block-101-339" class="ct-text-block">Publisert: <span id="span-103-339" class="ct-span">19. oktober 2020</span>
+</div>
+</div>
+<div id="div_block-19-274" class="ct-div-block"><div id="code_block-120-339" class="ct-code-block">
+<!-- Start Repeater -->
+
+
+	<div class="relatert_wrapper">	
+      <a class="relatert_link" href="/teklab-static-test/artikler/ai-narrator-fortellinger-som-passer-brukeren/">
+      <img class="relatert_image lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOwAAALEAQAAAACTEZJJAAAAAnRSTlMAAHaTzTgAAACESURBVHja7cExAQAAAMKg9U9tCU+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4Gt8sAAXGaT0kAAAAASUVORK5CYII=" data-src="/teklab-static-test/wp-content/uploads/AINarratorHeader.jpg" decoding="async" data-eio-rwidth="1260" data-eio-rheight="708"><noscript><img class="relatert_image" src="/teklab-static-test/wp-content/uploads/AINarratorHeader.jpg" data-eio="l"></noscript>
+			<h3 class="relatert_stikktittel">
+				 			</h3>			
+      		<h3 class="relatert_tittel">
+				 AI Narrator: Fortellinger som passer brukeren			</h3>
+		      </a>
+	</div>
+	<div class="relatert_wrapper">	
+      <a class="relatert_link" href="/teklab-static-test/artikler/fra-stroymeteneste-til-droymeteneste/">
+      <img class="relatert_image lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA/QAAAL1AQAAAABBdZLeAAAAAnRSTlMAAHaTzTgAAAB1SURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgDcDeo8AAYlobZcAAAAASUVORK5CYII=" data-src="/teklab-static-test/wp-content/uploads/sumo-kids.jpg" decoding="async" data-eio-rwidth="1012" data-eio-rheight="757"><noscript><img class="relatert_image" src="/teklab-static-test/wp-content/uploads/sumo-kids.jpg" data-eio="l"></noscript>
+			<h3 class="relatert_stikktittel">
+				 			</h3>			
+      		<h3 class="relatert_tittel">
+				 Frå strøymeteneste til drøymeteneste			</h3>
+		      </a>
+	</div>
+	<div class="relatert_wrapper">	
+      <a class="relatert_link" href="/teklab-static-test/artikler/vitachronicle-a-tale-of-innovation-and-adventure-in-phuket/">
+      <img class="relatert_image lazyload ewww_webp_lazy_load" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB2oAAAWSAQAAAAD+mFhqAAAAAnRSTlMAAHaTzTgAAAFgSURBVHja7cEBAQAAAIIg/69uSEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GzOZAAGvUbw5AAAAAElFTkSuQmCC" data-src="/teklab-static-test/wp-content/uploads/Skjermbilde-2024-08-08-kl.-15.02.58.jpg" decoding="async" data-eio-rwidth="1898" data-eio-rheight="1426" data-src-webp="/teklab-static-test/wp-content/uploads/Skjermbilde-2024-08-08-kl.-15.02.58.jpg.webp"><noscript><img class="relatert_image" src="/teklab-static-test/wp-content/uploads/Skjermbilde-2024-08-08-kl.-15.02.58.jpg" data-eio="l"></noscript>
+			<h3 class="relatert_stikktittel">
+				 			</h3>			
+      		<h3 class="relatert_tittel">
+				 The VitaChronicle prototype presented in Phuket			</h3>
+		      </a>
+	</div>
+	<div class="relatert_wrapper">	
+      <a class="relatert_link" href="/teklab-static-test/artikler/innovasjons-pedagogikk-for-medieutdanninger/">
+      <img class="relatert_image lazyload ewww_webp_lazy_load" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABCIAAAJcAQAAAAAEUjh1AAAAAnRSTlMAAHaTzTgAAABlSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDQ8NwABXiTvMwAAAABJRU5ErkJggg==" data-src="/teklab-static-test/wp-content/uploads/bilde1-2.jpg" decoding="async" data-eio-rwidth="1058" data-eio-rheight="604" data-src-webp="/teklab-static-test/wp-content/uploads/bilde1-2.jpg.webp"><noscript><img class="relatert_image" src="/teklab-static-test/wp-content/uploads/bilde1-2.jpg" data-eio="l"></noscript>
+			<h3 class="relatert_stikktittel">
+				 Fagartikkel:			</h3>			
+      		<h3 class="relatert_tittel">
+				 Innovasjonspedagogikk for medieutdanninger			</h3>
+		      </a>
+	</div>
+</div></div>
+</div>
+</div></section><footer id="section-29-28" class=" ct-section"><div class="ct-section-inner-wrap">
+<div id="new_columns-129-28" class="ct-new-columns">
+<div id="div_block-131-28" class="ct-div-block">
+<h5 id="headline-133-28" class="ct-headline">Kontakt oss</h5>
+<div id="text_block-154-28" class="ct-text-block">Professor Lars Nyre:<br><a href="mailto:lars.nyre@uib.no">lars.nyre@uib.no</a><br>
+</div>
+</div>
+<div id="div_block-130-28" class="ct-div-block">
+<h5 id="headline-138-28" class="ct-headline">Besøksadresse</h5>
+<div id="text_block-139-28" class="ct-text-block">Media City Bergen<br>Lars Hilles gate 30, 5007 Bergen<br>
+</div>
+</div>
+<div id="div_block-132-28" class="ct-div-block">
+<h5 id="headline-140-28" class="ct-headline">Følg oss<br>
+</h5>
+<div id="_social_icons-145-28" class="oxy-social-icons">
+<a href="http://facebook.com/TekLabUiB/" target="_blank" class="oxy-social-icons-facebook"><svg><title>Visit our Facebook</title>
+<use xlink:href="#oxy-social-icons-icon-facebook-blank"></use></svg></a><a href="https://www.instagram.com/teklab.norge/" target="_blank" class="oxy-social-icons-instagram"><svg><title>Visit our Instagram</title>
+<use xlink:href="#oxy-social-icons-icon-instagram-blank"></use></svg></a><a href="https://twitter.com/TeklabUib" target="_blank" class="oxy-social-icons-twitter"><svg><title>Visit our Twitter</title>
+<use xlink:href="#oxy-social-icons-icon-twitter-blank"></use></svg></a><a href="https://www.linkedin.com/company/teklab-norge" target="_blank" class="oxy-social-icons-linkedin"><svg><title>Visit our LinkedIn</title>
+<use xlink:href="#oxy-social-icons-icon-linkedin-blank"></use></svg></a><a href="https://www.youtube.com/channel/UCh59RrMgN_-XYa3NzgWwY8Q" target="_blank" class="oxy-social-icons-youtube"><svg><title>Visit our YouTube channel</title>
+<use xlink:href="#oxy-social-icons-icon-youtube-blank"></use></svg></a>
+</div>
+</div>
+</div>
+<div id="new_columns-212-28" class="ct-new-columns">
+<div id="div_block-213-28" class="ct-div-block">
+<h5 id="headline-190-28" class="ct-headline">Postadresse</h5>
+<div id="text_block-186-28" class="ct-text-block">Universitetet i Bergen<br>TekLab v/Institutt for informasjons- <br>og medievitenskap<br>Postboks 7802<br>5020 BERGEN</div>
+</div>
+<div id="div_block-214-28" class="ct-div-block">
+<img id="image-151-28" alt="Universitetet i bergen" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABqYAAAEnAQAAAADj3c9QAAAAAnRSTlMAAHaTzTgAAABUSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4M9poAAQmbdG0AAAAASUVORK5CYII=" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/UiBlogo_gray_v.png" decoding="async" data-eio-rwidth="1702" data-eio-rheight="295"><noscript><img id="image-151-28" alt="Universitetet i bergen" src="/teklab-static-test/wp-content/uploads/UiBlogo_gray_v.png" class="ct-image" data-eio="l"></noscript>
+</div>
+<div id="div_block-215-28" class="ct-div-block">
+<img id="image-178-28" alt="Logo: Direktoratet for høyere utdanning og kompetanse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABhkAAAHVAQAAAADEeqf2AAAAAnRSTlMAAHaTzTgAAABwSURBVHja7cGBAAAAAMOg+VPf4ARVAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAMWj4AAGU33xBAAAAAElFTkSuQmCC" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/HKDir_transparent.png" decoding="async" data-eio-rwidth="1561" data-eio-rheight="469"><noscript><img id="image-178-28" alt="Logo: Direktoratet for høyere utdanning og kompetanse" src="/teklab-static-test/wp-content/uploads/HKDir_transparent.png" class="ct-image" data-eio="l"></noscript>
+</div>
+</div>
+</div></footer><footer id="section-241-28" class=" ct-section"><div class="ct-section-inner-wrap"><div id="new_columns-227-28" class="ct-new-columns">
+<div id="div_block-228-28" class="ct-div-block"></div>
+<div id="div_block-231-28" class="ct-div-block"><a id="link_text-235-28" class="ct-link-text" href="/teklab-static-test/#gdpr_cookie_modal">Informasjonskapsler og personvern</a></div>
+<div id="div_block-233-28" class="ct-div-block"></div>
+</div></div></footer>	<!-- WP_FOOTER -->
+<script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/twentytwentythree\/*","\/wp-content\/themes\/oxygen-is-not-a-theme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script>
+
+  <!--copyscapeskip-->
+  <aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-light-scheme gdpr_infobar_postion_bottom" aria-label="GDPR Infokapsel-banner" style="display: none;">
+    <div class="moove-gdpr-info-bar-container">
+      <div class="moove-gdpr-info-bar-content">
+        
+<div class="moove-gdpr-cookie-notice">
+  <p>We are using cookies to give you the best experience on our website.</p>
+<p>You can find out more about which cookies we are using or switch them off in <button aria-haspopup="true" data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</button>.</p>
+</div>
+<!--  .moove-gdpr-cookie-notice -->        
+<div class="moove-gdpr-button-holder">
+		  <button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept">Accept</button>
+	  				<button class="mgbutton moove-gdpr-infobar-reject-btn gdpr-fbo-1 " aria-label="Reject">Reject</button>
+			</div>
+<!--  .button-container -->      </div>
+      <!-- moove-gdpr-info-bar-content -->
+    </div>
+    <!-- moove-gdpr-info-bar-container -->
+  </aside>
+  <!-- #moove_gdpr_cookie_info_bar -->
+  <!--/copyscapeskip-->
+        <span class="ssp-id" style="display:none">600</span>
+		<span style="display:none">            <div class="ssp-search">
+                <form class="search-form">
+                    <div class="form-row">
+                        <div class="search-input-container">
+                            <input class="search-input fuse-search" name="search-input" placeholder="Search" autocomplete="off" data-noresult="No results found.">
+                            <div class="search-auto-complete"></div>
+                            <button type="submit" class="search-submit">
+                                <svg viewbox="0 0 24 24">
+                                    <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="result"></div>
+            </div>
+			</span>
+		<script type="text/javascript">jQuery(document).ready(function() {
+				jQuery('body').on('click', '.oxy-menu-toggle', function() {
+					jQuery(this).parent('.oxy-nav-menu').toggleClass('oxy-nav-menu-open');
+					jQuery('body').toggleClass('oxy-nav-menu-prevent-overflow');
+					jQuery('html').toggleClass('oxy-nav-menu-prevent-overflow');
+				});
+				var selector = '.oxy-nav-menu-open .menu-item a[href*="#"]';
+				jQuery('body').on('click', selector, function(){
+					jQuery('.oxy-nav-menu-open').removeClass('oxy-nav-menu-open');
+					jQuery('body').removeClass('oxy-nav-menu-prevent-overflow');
+					jQuery('html').removeClass('oxy-nav-menu-prevent-overflow');
+					jQuery(this).click();
+				});
+			});</script>
+
+	
+		<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		   <defs>
+		      <symbol id="oxy-social-icons-icon-linkedin" viewbox="0 0 32 32">
+		         <title>linkedin</title>
+		         <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+		         <path d="M2 12h6v18h-6v-18z"></path>
+		         <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-facebook" viewbox="0 0 32 32">
+		         <title>facebook</title>
+		         <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-pinterest" viewbox="0 0 32 32">
+		         <title>pinterest</title>
+		         <path d="M16 2.138c-7.656 0-13.863 6.206-13.863 13.863 0 5.875 3.656 10.887 8.813 12.906-0.119-1.094-0.231-2.781 0.050-3.975 0.25-1.081 1.625-6.887 1.625-6.887s-0.412-0.831-0.412-2.056c0-1.925 1.119-3.369 2.506-3.369 1.181 0 1.756 0.887 1.756 1.95 0 1.188-0.756 2.969-1.15 4.613-0.331 1.381 0.688 2.506 2.050 2.506 2.462 0 4.356-2.6 4.356-6.35 0-3.319-2.387-5.638-5.787-5.638-3.944 0-6.256 2.956-6.256 6.019 0 1.194 0.456 2.469 1.031 3.163 0.113 0.137 0.131 0.256 0.094 0.4-0.106 0.438-0.338 1.381-0.387 1.575-0.063 0.256-0.2 0.306-0.463 0.188-1.731-0.806-2.813-3.337-2.813-5.369 0-4.375 3.175-8.387 9.156-8.387 4.806 0 8.544 3.425 8.544 8.006 0 4.775-3.012 8.625-7.194 8.625-1.406 0-2.725-0.731-3.175-1.594 0 0-0.694 2.644-0.863 3.294-0.313 1.206-1.156 2.712-1.725 3.631 1.3 0.4 2.675 0.619 4.106 0.619 7.656 0 13.863-6.206 13.863-13.863 0-7.662-6.206-13.869-13.863-13.869z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-youtube" viewbox="0 0 32 32">
+		         <title>youtube</title>
+		         <path d="M31.681 9.6c0 0-0.313-2.206-1.275-3.175-1.219-1.275-2.581-1.281-3.206-1.356-4.475-0.325-11.194-0.325-11.194-0.325h-0.012c0 0-6.719 0-11.194 0.325-0.625 0.075-1.987 0.081-3.206 1.356-0.963 0.969-1.269 3.175-1.269 3.175s-0.319 2.588-0.319 5.181v2.425c0 2.587 0.319 5.181 0.319 5.181s0.313 2.206 1.269 3.175c1.219 1.275 2.819 1.231 3.531 1.369 2.563 0.244 10.881 0.319 10.881 0.319s6.725-0.012 11.2-0.331c0.625-0.075 1.988-0.081 3.206-1.356 0.962-0.969 1.275-3.175 1.275-3.175s0.319-2.587 0.319-5.181v-2.425c-0.006-2.588-0.325-5.181-0.325-5.181zM12.694 20.15v-8.994l8.644 4.513-8.644 4.481z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-rss" viewbox="0 0 32 32">
+		         <title>rss</title>
+		         <path d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-twitter" viewbox="0 0 512 512">
+		         <title>twitter</title>
+		         <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-instagram" viewbox="0 0 32 32">
+		         <title>instagram</title>
+		         <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+		         <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+		         <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-facebook-blank" viewbox="0 0 32 32">
+		         <title>facebook-blank</title>
+		         <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-rss-blank" viewbox="0 0 32 32">
+		         <title>rss-blank</title>
+		         <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM8.719 25.975c-1.5 0-2.719-1.206-2.719-2.706 0-1.488 1.219-2.712 2.719-2.712 1.506 0 2.719 1.225 2.719 2.712 0 1.5-1.219 2.706-2.719 2.706zM15.544 26c0-2.556-0.994-4.962-2.794-6.762-1.806-1.806-4.2-2.8-6.75-2.8v-3.912c7.425 0 13.475 6.044 13.475 13.475h-3.931zM22.488 26c0-9.094-7.394-16.5-16.481-16.5v-3.912c11.25 0 20.406 9.162 20.406 20.413h-3.925z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-linkedin-blank" viewbox="0 0 32 32">
+		         <title>linkedin-blank</title>
+		         <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-pinterest-blank" viewbox="0 0 32 32">
+		         <title>pinterest</title>
+		         <path d="M16 2.138c-7.656 0-13.863 6.206-13.863 13.863 0 5.875 3.656 10.887 8.813 12.906-0.119-1.094-0.231-2.781 0.050-3.975 0.25-1.081 1.625-6.887 1.625-6.887s-0.412-0.831-0.412-2.056c0-1.925 1.119-3.369 2.506-3.369 1.181 0 1.756 0.887 1.756 1.95 0 1.188-0.756 2.969-1.15 4.613-0.331 1.381 0.688 2.506 2.050 2.506 2.462 0 4.356-2.6 4.356-6.35 0-3.319-2.387-5.638-5.787-5.638-3.944 0-6.256 2.956-6.256 6.019 0 1.194 0.456 2.469 1.031 3.163 0.113 0.137 0.131 0.256 0.094 0.4-0.106 0.438-0.338 1.381-0.387 1.575-0.063 0.256-0.2 0.306-0.463 0.188-1.731-0.806-2.813-3.337-2.813-5.369 0-4.375 3.175-8.387 9.156-8.387 4.806 0 8.544 3.425 8.544 8.006 0 4.775-3.012 8.625-7.194 8.625-1.406 0-2.725-0.731-3.175-1.594 0 0-0.694 2.644-0.863 3.294-0.313 1.206-1.156 2.712-1.725 3.631 1.3 0.4 2.675 0.619 4.106 0.619 7.656 0 13.863-6.206 13.863-13.863 0-7.662-6.206-13.869-13.863-13.869z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-youtube-blank" viewbox="0 0 32 32">
+		         <title>youtube</title>
+		         <path d="M31.681 9.6c0 0-0.313-2.206-1.275-3.175-1.219-1.275-2.581-1.281-3.206-1.356-4.475-0.325-11.194-0.325-11.194-0.325h-0.012c0 0-6.719 0-11.194 0.325-0.625 0.075-1.987 0.081-3.206 1.356-0.963 0.969-1.269 3.175-1.269 3.175s-0.319 2.588-0.319 5.181v2.425c0 2.587 0.319 5.181 0.319 5.181s0.313 2.206 1.269 3.175c1.219 1.275 2.819 1.231 3.531 1.369 2.563 0.244 10.881 0.319 10.881 0.319s6.725-0.012 11.2-0.331c0.625-0.075 1.988-0.081 3.206-1.356 0.962-0.969 1.275-3.175 1.275-3.175s0.319-2.587 0.319-5.181v-2.425c-0.006-2.588-0.325-5.181-0.325-5.181zM12.694 20.15v-8.994l8.644 4.513-8.644 4.481z"></path>
+		      </symbol>
+		      <symbol id="oxy-social-icons-icon-twitter-blank" viewbox="0 0 448 512">
+				<title>twitter</title>
+				<path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"></path>
+			  </symbol>
+		      <symbol id="oxy-social-icons-icon-instagram-blank" viewbox="0 0 32 32">
+		         <title>instagram</title>
+		         <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+		         <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+		         <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+		      </symbol>
+		   </defs>
+		</svg>
+	
+	<script id="eio-lazy-load-js-before">var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0,"use_dpr":1};</script>
+<script src="/teklab-static-test/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js" id="eio-lazy-load-js" async data-wp-strategy="async"></script>
+<script src="/teklab-static-test/wp-content/plugins/simply-static-pro/assets/fuse.js" id="ssp-fuse-js"></script>
+<script id="ssp-search-js-extra">
+var ssp_search = {"html":"            <div class=\"ssp-search\">\n                <form class=\"search-form\">\n                    <div class=\"form-row\">\n                        <div class=\"search-input-container\">\n                            <input class=\"search-input fuse-search\" name=\"search-input\"\n                                   placeholder=\"Search\"\n                                   autocomplete=\"off\"\n                                   data-noresult=\"No results found.\">\n                            <div class=\"search-auto-complete\"><\/div>\n                            <button type='submit' class='search-submit'>\n                                <svg viewBox='0 0 24 24'>\n                                    <path d='M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z'\/>\n                                <\/svg>\n                            <\/button>\n                        <\/div>\n                    <\/div>\n                <\/form>\n                <div class=\"result\"><\/div>\n            <\/div>\n\t\t\t","use_selector":"1"};
+</script>
+<script src="/teklab-static-test/wp-content/plugins/simply-static-pro/assets/ssp-search.js" id="ssp-search-js"></script>
+<script id="moove_gdpr_frontend-js-extra">var moove_frontend_gdpr_scripts = {"ajaxurl":"\/teklab-static-test\/wp-admin\/admin-ajax.php","post_id":"600","plugin_dir":"\/teklab-static-test\/wp-content\/plugins\/gdpr-cookie-compliance","show_icons":"all","is_page":"","ajax_cookie_removal":"false","strict_init":"1","enabled_default":{"third_party":0,"advanced":0},"geo_location":"false","force_reload":"false","is_single":"1","hide_save_btn":"false","current_user":"0","cookie_expiration":"365","script_delay":"2000","close_btn_action":"1","close_btn_rdr":"","scripts_defined":"{\"cache\":true,\"header\":\"\",\"body\":\"\",\"footer\":\"\",\"thirdparty\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"},\"advanced\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"}}","gdpr_scor":"true","wp_lang":"","wp_consent_api":"false"};</script>
+<script src="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js" id="moove_gdpr_frontend-js"></script>
+<script id="moove_gdpr_frontend-js-after">var gdpr_consent__strict = "false"
+var gdpr_consent__thirdparty = "false"
+var gdpr_consent__advanced = "false"
+var gdpr_consent__cookies = ""</script>
+<script type="text/javascript" id="ct-footer-js"></script>
+    
+  <!--copyscapeskip-->
+  <!-- V1 -->
+  <dialog id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" aria-modal="true" aria-label="Skjermboks for GDPR-innstillinger">
+    <div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
+          
+        <button class="moove-gdpr-modal-close" autofocus aria-label="Lukk GDPR Infokapsel-innstillinger">
+          <span class="gdpr-sr-only">Lukk GDPR Infokapsel-innstillinger</span>
+          <span class="gdpr-icon moovegdpr-arrow-close"></span>
+        </button>
+            <div class="moove-gdpr-modal-left-content">
+        
+<div class="moove-gdpr-company-logo-holder">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAADpAQMAAABWXc0gAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAhSURBVBgZ7cEBDQAAAMIg+6d+DjdgAAAAAAAAAAAAAA8CKPUAAWnFi1QAAAAASUVORK5CYII=" alt="TekLab" width="350" height="233" class="img-responsive lazyload" data-src="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png" decoding="async" data-eio-rwidth="350" data-eio-rheight="233"><noscript><img src="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png" alt="TekLab" width="350" height="233" class="img-responsive" data-eio="l"></noscript>
+</div>
+<!--  .moove-gdpr-company-logo-holder -->        <ul id="moove-gdpr-menu">
+          
+<li class="menu-item-on menu-item-privacy_overview menu-item-selected">
+  <button data-href="#privacy_overview" class="moove-gdpr-tab-nav" aria-label="Personvernoversikt">
+    <span class="gdpr-nav-tab-title">Personvernoversikt</span>
+  </button>
+</li>
+
+  <li class="menu-item-strict-necessary-cookies menu-item-off">
+    <button data-href="#strict-necessary-cookies" class="moove-gdpr-tab-nav" aria-label="Strengt nødvendige infokapsler">
+      <span class="gdpr-nav-tab-title">Strengt nødvendige infokapsler</span>
+    </button>
+  </li>
+
+
+
+
+        </ul>
+        
+<div class="moove-gdpr-branding-cnt">
+  		<a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" rel="noopener noreferrer" target="_blank" class="moove-gdpr-branding">Powered by&nbsp; <span>GDPR Infokapsler-samsvar</span></a>
+		</div>
+<!--  .moove-gdpr-branding -->      </div>
+      <!--  .moove-gdpr-modal-left-content -->
+      <div class="moove-gdpr-modal-right-content">
+        <div class="moove-gdpr-modal-title">
+           
+        </div>
+        <!-- .moove-gdpr-modal-ritle -->
+        <div class="main-modal-content">
+
+          <div class="moove-gdpr-tab-content">
+            
+<div id="privacy_overview" class="moove-gdpr-tab-main">
+      <span class="tab-title">Personvernoversikt</span>
+    <div class="moove-gdpr-tab-main-content">
+  	<p>Dette nettstedet bruker infokapsler slik at vi kan gi deg den best mulige brukeropplevelsen. Infokapsler lagres i nettlesren din og utfører funksjoner som å gjenkjenne deg når du returnerer til nettstedet vårt og hjelper oss forstå hvilke deler av nettstedet du finner interessant og nyttig.</p>
+  	  </div>
+  <!--  .moove-gdpr-tab-main-content -->
+
+</div>
+<!-- #privacy_overview -->            
+  <div id="strict-necessary-cookies" class="moove-gdpr-tab-main" style="display:none">
+    <span class="tab-title">Strengt nødvendige infokapsler</span>
+    <div class="moove-gdpr-tab-main-content">
+      <p>Strengt nødvendige infokapsler må være slått på hele tiden slik at vi kan lagre preferansene dine for infokapselinnstillinger.</p>
+      <div class="moove-gdpr-status-bar ">
+        <div class="gdpr-cc-form-wrap">
+          <div class="gdpr-cc-form-fieldset">
+            <label class="cookie-switch" for="moove_gdpr_strict_cookies">    
+              <span class="gdpr-sr-only">Slå på eller av infokapsler</span>        
+              <input type="checkbox" aria-label="Strengt nødvendige infokapsler" value="check" name="moove_gdpr_strict_cookies" id="moove_gdpr_strict_cookies">
+              <span class="cookie-slider cookie-round gdpr-sr" data-text-enable="Slått på" data-text-disabled="Slått av">
+                <span class="gdpr-sr-label">
+                  <span class="gdpr-sr-enable">Slått på</span>
+                  <span class="gdpr-sr-disable">Slått av</span>
+                </span>
+              </span>
+            </label>
+          </div>
+          <!-- .gdpr-cc-form-fieldset -->
+        </div>
+        <!-- .gdpr-cc-form-wrap -->
+      </div>
+      <!-- .moove-gdpr-status-bar -->
+              <div class="moove-gdpr-strict-warning-message" style="margin-top: 10px;">
+          <p>Om du slår av denne infokapselen kan vi ikke lagre preferansene dine. Dette betyr at hver gang du besøker dette nettstedet må du slå på eller av infokapsler på nytt.</p>
+        </div>
+        <!--  .moove-gdpr-tab-main-content -->
+                                              
+    </div>
+    <!--  .moove-gdpr-tab-main-content -->
+  </div>
+  <!-- #strict-necesarry-cookies -->
+            
+            
+            
+          </div>
+          <!--  .moove-gdpr-tab-content -->
+        </div>
+        <!--  .main-modal-content -->
+        <div class="moove-gdpr-modal-footer-content">
+          <div class="moove-gdpr-button-holder">
+			  		<button class="mgbutton moove-gdpr-modal-allow-all button-visible" aria-label="Slå på alle">Slå på alle</button>
+		  					<button class="mgbutton moove-gdpr-modal-save-settings button-visible" aria-label="Lagre innstillingene">Lagre innstillingene</button>
+				</div>
+<!--  .moove-gdpr-button-holder -->        </div>
+        <!--  .moove-gdpr-modal-footer-content -->
+      </div>
+      <!--  .moove-gdpr-modal-right-content -->
+
+      <div class="moove-clearfix"></div>
+
+    </div>
+    <!--  .moove-gdpr-modal-content -->
+  </dialog>
+  <!-- #moove_gdpr_cookie_modal -->
+  <!--/copyscapeskip-->
+<style type="text/css" id="ct_code_block_css_122">.person {
+      display: inline-block;
+      margin: 5px;
+      padding: 5px 10px 5px 10px;
+      border: 1px;
+       -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ border-radius: 20px;
+/* box-shadow */
+ -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+ -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+ box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      color: black;
+}
+
+.person:hover{
+cursor: pointer;
+       -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+ -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+ box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}</style>
+<style type="text/css" id="ct_code_block_css_121">.partner_bilde_wrap{
+width:100%;
+}
+
+.partner_bilde{
+max-height:50px;
+}</style>
+<!-- /WP_FOOTER --> 
+</body>
+
+
+<!-- plugin=object-cache-pro client=phpredis metric#hits=6303 metric#misses=25 metric#hit-ratio=99.6 metric#bytes=14848759 metric#prefetches=0 metric#store-reads=215 metric#store-writes=11 metric#store-hits=352 metric#store-misses=17 metric#sql-queries=42 metric#ms-total=541.66 metric#ms-cache=43.65 metric#ms-cache-avg=0.1940 metric#ms-cache-ratio=8.1 -->
+</html>
