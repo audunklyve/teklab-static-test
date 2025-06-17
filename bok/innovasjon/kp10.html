@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="nb" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="/teklab-static-test/bok/innovasjon/kp10.html">
+      
+      
+        <link rel="prev" href="/teklab-static-test/bok/innovasjon/kp09.html">
+      
+      
+        <link rel="next" href="/teklab-static-test/bok/innovasjon/kp11.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="/teklab-static-test/bok/innovasjon/assets/favicon.png">
+      
+    
+    
+      
+        <title>10. Pivot - Håndbok i innovasjon for studenter</title>
+      
+    
+    
+      <link rel="stylesheet" href="/teklab-static-test/bok/innovasjon/assets/stylesheets/main.957d08c0.min.css">
+      
+        
+        <link rel="stylesheet" href="/teklab-static-test/bok/innovasjon/assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+
+<!--
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  window.iFrameResizer = {
+    targetOrigin: '/teklab-static-test/bok/'
+  }
+  $(document).ready(function() {
+    $('h1, h2, h3').on("contextmenu", function (e) {
+    navigator.clipboard.writeText(this.id).then(function() {
+    console.log('Copied to clipboard');
+    }, function(err) {
+    console.error('Could not copy text: ', err);
+    });
+    e.preventDefault();
+    });
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.7/iframeResizer.contentWindow.js"></script>
+-->
+
+  
+      
+    
+
+
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Domine";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="/teklab-static-test/bok/innovasjon/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="10. Pivot - Håndbok i innovasjon for studenter">
+<meta property="og:image" content="/teklab-static-test/bok/innovasjon/assets/images/social/kp10.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="/teklab-static-test/bok/innovasjon/kp10.html">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="10. Pivot - Håndbok i innovasjon for studenter">
+<meta property="twitter:image" content="/teklab-static-test/bok/innovasjon/assets/images/social/kp10.png">
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="lime" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#10-pivot" class="md-skip">
+          Gå til innhold
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/teklab-static-test/bok/innovasjon/" title="Håndbok i innovasjon for studenter" class="md-header__button md-logo" aria-label="Håndbok i innovasjon for studenter" data-md-component="logo">
+      
+  <img src="/teklab-static-test/bok/innovasjon/assets/bulb@4x.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Håndbok i innovasjon for studenter
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10. Pivot
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="lime" data-md-color-accent="black" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="lime" data-md-color-accent="lime" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Søk" placeholder="Søk" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Søk">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Nullstill" aria-label="Nullstill" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Starter søk
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasjon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="/teklab-static-test/bok/innovasjon/" title="Håndbok i innovasjon for studenter" class="md-nav__button md-logo" aria-label="Håndbok i innovasjon for studenter" data-md-component="logo">
+      
+  <img src="/teklab-static-test/bok/innovasjon/assets/bulb@4x.svg" alt="logo">
+
+    </a>
+    Håndbok i innovasjon for studenter
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1">
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Om boken
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Om boken
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/omslag.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Omslag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kolofon.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Kolofon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Om boken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/toc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Innhold
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Kapitler
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Kapitler
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp01.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Slik leser du boken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp02.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Innovasjon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp03.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Prosjektstyring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp04.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Innsiktsarbeid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp05.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Prototyping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp06.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Innholdsdesign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp07.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Brukeropplevelse (UX)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp08.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Forretningsutvikling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp09.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Pitching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Pivot
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="/teklab-static-test/bok/innovasjon/kp10.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Pivot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="I dette kapittelet:">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      I dette kapittelet:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-handlingspunkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. Handlingspunkt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-fra-irrelevant-til-nyttig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2. Fra irrelevant til nyttig
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.2. Fra irrelevant til nyttig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pandemi-jobbing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pandemi-jobbing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fra-dumpster-diving-til-luksus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fra dumpster diving til luksus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-hva-er-en-pivot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3. Hva er en pivot?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-studentenes-erfaringer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4. Studentenes erfaringer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4. Studentenes erfaringer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ta-et-steg-tilbake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ta et steg tilbake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ikke-ta-trygge-beslutninger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ikke ta trygge beslutninger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eksempler-fra-teklab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eksempler fra TekLab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kp11.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Verktøy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/teklab-static-test/bok/innovasjon/kpx-ref.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Litteratur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="I dette kapittelet:">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      I dette kapittelet:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-handlingspunkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. Handlingspunkt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-fra-irrelevant-til-nyttig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2. Fra irrelevant til nyttig
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.2. Fra irrelevant til nyttig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pandemi-jobbing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pandemi-jobbing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fra-dumpster-diving-til-luksus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fra dumpster diving til luksus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-hva-er-en-pivot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3. Hva er en pivot?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-studentenes-erfaringer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4. Studentenes erfaringer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4. Studentenes erfaringer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ta-et-steg-tilbake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ta et steg tilbake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ikke-ta-trygge-beslutninger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ikke ta trygge beslutninger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eksempler-fra-teklab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eksempler fra TekLab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="10-pivot"><strong>10. Pivot</strong></h1>
+<p><em>Dette kapitlet handler om metoder for å skifte kurs hvis det er fare for at prosjektet mislykkes.</em></p>
+<ul>
+<li>Planlagt kurskorrigering</li>
+</ul>
+<h2 id="101-handlingspunkt"><strong>10.1. Handlingspunkt</strong></h2>
+<ul>
+<li>Noen ganger kan et produkt være egnet til noe helt annet enn det som først var målet. Da må dere tørre å innse dette. Det er ingen skam å skifte retning.</li>
+<li>Dere må kanskje forandre verdiforslaget for å treffe målgruppen bedre, eller innrette produktet på en helt annen målgruppe enn dere først trodde. </li>
+<li>En “pivot” er en planlagt kurskorrigering som tester ut en ny antakelse om hva som er poenget med prosjektet.</li>
+</ul>
+<h2 id="102-fra-irrelevant-til-nyttig">
+<strong>10.2. Fra irrelevant til nyttig</strong> <img alt="img" class="avatar-kapittel-thumbnail" src="/teklab-static-test/bok/innovasjon/assets/figurer/avatarer/GeirTerje_avatar.png">
+</h2>
+<p>Da jeg var utviklingsdirektør i NTB fikk vi tydelige signaler fra kundene på at den tradisjonelle leveransen fra nyhetsbyrået gjennom 150 år ble mindre og mindre relevant dag for dag. Vi så at ingen av de mer enn hundre daglige artikler vi sendte ut noensinne ble brukt av mer enn 10 prosent av kundene.</p>
+<p>Kundene var samtidig glade for at vi eksisterte, at vi overvåket nyhetsbildet, dekket de “kjedelige, men viktige” sakene som de bare en sjelden gang ville publisere og at vi tilbød infrastruktur på lagring av bilder og håndtering av sportsdata som ville blitt dyrere å gjøre hver for seg.</p>
+<p>Men kjerneproduktet ble daglig mer og mer irrelevant i en verden der personalisert innhold, segmentering og hjelp til å prioritere egen bruk av ressurser ble viktigere og viktigere.</p>
+<h3 id="pandemi-jobbing"><strong>Pandemi-jobbing</strong></h3>
+<p>En kjernegruppe begynte under pandemien i det stille å jobbe med “nye NTB”. Det innebar en satsing på ekstremt detaljert metadata, så kundene kunne treffe leserne mer presist. Det innebar en stor satsing på automatisert innhold, så vi kunne øke produksjonen av innhold som kunne skaleres til postnummer-nivå, samtidig som vi så for oss å skjære ned på produksjonen av referater og artikler som kundene i liten grad ønsket. Og, like viktig som de to andre, vi begynte å jobbe med en løsning som betød at vi skulle bruke langt større ressurser på å varsle kundene om hva som skulle skje, enn å skrive om hva som hadde skjedd.</p>
+<p>Dette var en idé til en omfattende pivotering av et selskap der kjerneproduktet var under voldsomt press, men der viljen til å gå løs på endringene ikke egentlig var til stede hos flertallet av medarbeiderne og hvor investeringsviljen manglet hos kollegene i ledelsen og i styret.</p>
+<p>De fleste av oss som var de største pådriverne for dette i 2020-2021, forlot selskapet i løpet av et drøyt halvår, så eierskapet til idéen om en betydelig strategisk endring forsvant ut av NTB før det ble implementert. </p>
+<p>En pivotering er ikke kun nødvendig i en innovasjonsprosess. Det er hele tiden nødvendig å se etter muligheter for å endre og utvikle den eksisterende forretning i en retning som kundene enten ønsker, eller ennå ikke har forstått at de snart vil ha nytte av.</p>
+<h3 id="fra-dumpster-diving-til-luksus"><strong>Fra dumpster diving til luksus</strong></h3>
+<p>I et prosjekt om medieentreprenørskap som jeg var inne i på UiO for noen år siden, ble studentene utfordret til å komme opp med en idé til et produkt. De fikk 15 minutter til å finne en idé og et minutt til å presentere den. Det var kun tillatt med positive innspill fra de som lyttet til presentasjonene. Ingen kritiske spørsmål! Et av teamene hadde en idé til en app som skulle hjelpe dumpster divere til å finne steder hvor de kunne finne gratis mat som var kastet. Noen måneder senere hadde vi en ny samling, der teamene ble bedt om å bruke noen minutter på å forbedre idéen og tenke forretningsmodell. </p>
+<p>Da ble dumpster diving-appen pivotert til å bli en tjeneste for handel med luksus-matvarer. Teknologien var den samme, men målgruppen og innhold noe annet. Det var naturligvis bare et lekent forsøk på å skape litt dynamikk i en gruppe, men det viser hvor relativt langt det kan være fra første versjon til en levedyktig versjon av en idé.</p>
+<p>PS: Hvis du lurer på hva pivot egentlig betyr, søk på friends + pivot på youtube.</p>
+<h2 id="103-hva-er-en-pivot">
+<strong>10.3. Hva er en pivot?</strong> <img alt="img" class="avatar-kapittel-thumbnail" src="/teklab-static-test/bok/innovasjon/assets/figurer/avatarer/Lars_avatar.png">
+</h2>
+<p>Noen ganger kan det være smart og se etter nye muligheter og endringer i et prosjekt. Når man har kommet frem til en god ide, føler mange på at det er vanskelig å gi fra seg den smarte løsningen de har kommet frem til, men noen ganger kan dette forbedre prosjektet, og gjøre det om til et enda bedre og sterkere produkt! En “pivot” er en planlagt kurskorrigering som tester ut en ny antakelse om hva som er poenget med prosjektet.</p>
+<p><strong>Prøv å feile.</strong> Det er alltid en viss risiko for at prosjektet ikke kan gjennomføres som planlagt og dermed ikke vil nå sine mål. Hvis prosjektteamet ikke er klar over denne risikoen, er den enda mye høyere. Prosjektgruppen bør derfor utsette alle idéer og løsningsforslag for nådeløs kritikk. Dersom det til slutt vil vise seg at prosjektet vil feile i sin nåværende form, er det en stor fordel å feile så fort som mulig. Dette er bakgrunnen for uttrykkene “fail fast” og “fail forward”. Dere vil spare mye tid og penger hvis dere klarer å innrømme at planen ikke er god nok, og en slik innrømmelse vil kunne bringe dere raskt videre til en bedre plan. </p>
+<p>Eric Ries sier det slik: "Når en gründer har en uklar hypotese, er det nesten umulig å oppleve fullstendig fiasko, og hvis man ikke finner alvorlige feil har man heller ikke drivkraft til å ta fatt på de radikale endringene en pivot krever" (Ries 2011, s. 161). «Entreprenører må møte sin største frykt og være villig til å mislykkes, ofte på en offentlig måte», sier Ries (s. 162).</p>
+<p>Her er noen risikoer som studentprosjekter kan stå overfor:</p>
+<ul>
+<li>
+<strong>Små firmaer kan droppe samarbeidet.</strong> Firmaer kan trekke seg ut eller gå konkurs. Hvis prosjektet er basert på samarbeid med små firmaer er det en risiko for at de ikke kan innfri de forpliktelsene utviklingen er basert på. I verste fall går de konkurs underveis i perioden. </li>
+<li>
+<strong>Det kan bli konflikt om opphavsrett</strong>. Det er en risiko for at det blir konflikt om opphavsrett til gode prototyper, enten internt i prosjektgruppen eller overfor andre interessenter. Det er lurt å regulere opphavsrett ved hjelp av kontrakter og være bevisst på denne problematikken.</li>
+<li>
+<strong>Personvernet blir ikke ivaretatt.</strong> Det er en risiko for at testdeltakere ikke blir behandlet korrekt utfra personvernlovgivningen. Dersom de oppfatter testingen som useriøs eller misliker å bli eksponert med fullt navn, kan de klage på prosjektet. På den andre siden er det både tidkrevende og komplisert å følge personvernlovgivningen til punkt og prikke. </li>
+<li>
+<strong>Entusiasmen svekkes.</strong> Etter en innledende fase preget av begeistring er det fare for at deltakerne i prosjektgruppen blir mindre motivert. Noen vil kanskje ønske å trekke seg ut eller skifte rolle, og det blir konflikt i gruppen. På den andre siden er en viss grad av interne spenninger i en utviklingsgruppe bra for kreativiteten og evnen til nyskaping. </li>
+</ul>
+<h2 id="104-studentenes-erfaringer">
+<strong>10.4. Studentenes erfaringer</strong> <img alt="img" class="avatar-kapittel-julene-thumbnail" src="/teklab-static-test/bok/innovasjon/assets/figurer/avatarer/Julene_avatar.png">
+</h2>
+<p>Det er vanlig i innovasjonsprosesser at prosjektet tar brå og uventede vendinger. Det er tross alt disse vendingene som skal styre dere i riktig retning. Her kommer noen av våre erfaringer fra egne prosjekter: </p>
+<h3 id="ta-et-steg-tilbake"><strong>Ta et steg tilbake</strong></h3>
+<p>Vi jobbet målrettet for at Vink skulle passe inn under Future Solutions sine ønsker og behov. Vi var faktisk så målrettet, at vi glemte bort ønskene og behovene til de aller viktigste; de som faktisk skulle bruke dette produktet! </p>
+<p>Etter en evaluering av den første prototypen måtte vi ta noen steg tilbake og spørre oss selv:</p>
+<ul>
+<li>Ville målgruppen faktisk brukt dette? <strong>Nei.</strong> </li>
+<li>Har <em>vi</em> troen på disse funksjonene? <strong>Nei.</strong> </li>
+<li>Har vi utviklet en innovativ løsning? <strong>Nei.</strong>
+</li>
+</ul>
+<h3 id="ikke-ta-trygge-beslutninger"><strong>Ikke ta trygge beslutninger</strong></h3>
+<p><strong>Nyskaping kommer ikke av å ta trygge beslutninger.</strong> Det var enklere og raskere for oss å lage funksjoner på bestilling fra samarbeidspartner og journalister, enn å tenke utenfor boksen og designe noe som taklet roten av problemet til brukerne. Vi lot oss styre av vår egen frykt for at Future Solutions <em>potensielt</em> ikke ville forstå vår visjon. Denne frykten for å takle problemet “head on” gjennomsyret hele førsteutkastet av prototypen vår. </p>
+<p>Så, hvordan løste vi dette? Vi startet fra (nesten) scratch. Nå visste vi: </p>
+<p>Hva som <em>ikke</em> fungerte. Brukerne så ingen grunn til å bruke løsningen vår, og visste ikke hvor viktig deres hverdagslige tips var for journalister. Derfor gikk vi inn for å vise brukerne hvilke type tips som er relevant for nyhetsavisene, for å senke den høye terskelen for å sende inn tips. </p>
+<p>Behovene til brukerne <em>må</em> først. Vi var ikke klar over at vi ikke prioriterte brukerne. I intervju etter intervju sa nyhetslesere at de ikke ante hva journalister ønsket tips om, og derfor var det ikke noe de var interessert i å levere. Likevel prøvde vi å lage en plattform der det var opp til brukeren å ta initiativ, og vite hva som skulle sendes inn til avisene. </p>
+<p>Vi må <em>tørre</em> å ta sjanser!</p>
+<p>Vi kjørte en ny Design Sprint der vi satte et nytt langtidsmål med fokus på å bygge bro mellom journalister og lokalbefolkningen. Det var her konseptet ble omdøpt fra Tipps til Vink, som etterhvert fikk slagordet “<em>Gi et lite vink!</em>”. Vink er nemlig en todelt plattform, med én side for journalister og én for lesere som kan sende inn tips. </p>
+<p>Vår nye strategi for å verve tipsere var dypere festet i dataen fra innsiktsarbeidet. I stedet for å verve tipsere med kuponger på kaffe og is, spilte vi på deres indre motivasjon til å bidra til lokalsamfunnet. Data fra intervjuene våre viste at de fleste var opptatt av det som skjedde rundt seg i nærmiljøet sitt, men var usikker på hva som hadde nyhetsverdi. For eksempel var flere interessert i å lese om nye butikker i nærområdet og hverdagslige oppdateringer, men når de selv ble spurt om hva som var verdt å tipse avisene om, listet de opp sensasjonelle saker som bilkollisjoner og ulykker. </p>
+<p>Ved å gi journalister muligheten til å utlyse ønsket informasjon til leserne, fjernet vi mystikken rundt hva som faktisk er verdt å sende tips om. Så hvis leserne visste om noe aktuelt, kunne de “Gi et lite vink”! </p>
+<h3 id="eksempler-fra-teklab"><strong>Eksempler fra TekLab</strong></h3>
+<p>En pivot har blitt nødvendig i flere studentprosjekter som er formidlet på TekLabs nettsted. Her presenterer vi noen av dem.</p>
+<h4 id="pingfinn"><strong>PingFinn</strong></h4>
+<p>Noe av det første besøkende i Akvariet i Bergen møter på når man går inn er tretti ulike bøylepingviner i Pingvindammen. Pingvinene har alle et fargekodet armbånd, brukt av ansatte for å skille de ulike pingvinene fra hverandre. Med Pingfinn kan båndene ha et større formål! Bildegjenkjenning kan gjøre det enkelt for barn å bli kjent med de individuelle pingvinene.</p>
+<p><a href="/teklab-static-test/artikler/pingfinn-bringer-mennesker-og-pingviner-sammen/" target="_blank" rel="noopener">Les mer om PingFinn her</a></p>
+<h4 id="ark"><strong>Ark</strong></h4>
+<p>I startfasen av prosjektet var Ark fokusert på besøkende på Akvariet i Bergen som målgruppe, og hvordan man kunne lage innovative løsninger for publikum. I innsiktsarbeidet avdekket de et stort potensial blant de ansattes loggføringssystem av dyrestell; de brukte fortsatt ark for å notere viktige beskjeder til nestemann som kom på jobb. Dette åpnet for mange fallgruver, i verste fall kunne en glipp lede til brudd på dyrevelferd. Ark tok en pivot i tidlig fase, fra utstilling til digital samarbeidsplattform! Ark gikk i mot strømmen, men det lønnet seg til slutt da de valgte å løse et reelt problem.</p>
+<p><a href="/teklab-static-test/artikler/ark-vinner-mvp-prisen-2023/" target="_blank" rel="noopener">Les mer om Ark og prisen de mottok her</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Tilbake til toppen
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+    
+      
+        
+        <nav class="md-footer__inner md-grid" aria-label="Footer">
+          
+            
+            <a href="/teklab-static-test/bok/innovasjon/kp09.html" class="md-footer__link md-footer__link--prev" aria-label="Forrige: 9. Pitching">
+              <div class="md-footer__button md-icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+              </div>
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Forrige
+                </span>
+                <div class="md-ellipsis">
+                  9. Pitching
+                </div>
+              </div>
+            </a>
+          
+          
+            
+            <a href="/teklab-static-test/bok/innovasjon/kp11.html" class="md-footer__link md-footer__link--next" aria-label="Neste: 11. Verktøy">
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Neste
+                </span>
+                <div class="md-ellipsis">
+                  11. Verktøy
+                </div>
+              </div>
+              <div class="md-footer__button md-icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+              </div>
+            </a>
+          
+        </nav>
+      
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        
+        <div class="md-copyright__highlight md-copyright">
+        Forfattere: 
+        Lars Nyre, Geir Terje Ruud, 
+        Audun Klyve Gulbrandsen, Julie Sofie Berntsen, 
+        Julia Hellem Brandt, og Helene Høylandskjær.
+        </div>
+        <div class="md-copyright__highlight md-copyright">
+          &copy; <a href="/teklab-static-test/" target="_blank" rel="noopener">TekLab, Universitetet i Bergen, 2025</a>
+          1. utgave
+          ISBN: 978-82-8033-041-3 (E-bok, HTML)
+          </div>
+        <div class="md-copyright__highlight md-copyright">
+        Illustrasjoner: Julia Hellem Brandt
+        Webutvikling: Audun Klyve Gulbrandsen       
+        </div>
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.footer"], "search": "assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Kopiert til utklippstavlen", "clipboard.copy": "Kopier til utklippstavlen", "search.result.more.one": "1 til på denne siden", "search.result.more.other": "# flere på denne siden", "search.result.none": "Ingen treff", "search.result.one": "1 treff", "search.result.other": "# treff", "search.result.placeholder": "Skriv søkeord", "search.result.term.missing": "Mangler", "select.version": "Velg versjon"}}</script>
+    
+    
+      <script src="/teklab-static-test/bok/innovasjon/assets/javascripts/bundle.5a789024.min.js"></script>
+      
+        <script src="/teklab-static-test/bok/innovasjon/javascripts/shortcuts.js"></script>
+      
+        <script src="/teklab-static-test/bok/innovasjon/javascripts/footer-nav.js"></script>
+      
+    
+  </body>
+</html>
