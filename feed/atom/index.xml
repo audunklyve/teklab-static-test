@@ -8,12 +8,12 @@
 
 	<updated>2025-05-14T14:50:26Z</updated>
 
-	<link rel="alternate" type="text/html" href="/" />
-	<id>/feed/atom/</id>
-	<link rel="self" type="application/atom+xml" href="/feed/atom/" />
+	<link rel="alternate" type="text/html" href="/teklab-static-test/" />
+	<id>/teklab-static-test/feed/atom/</id>
+	<link rel="self" type="application/atom+xml" href="/teklab-static-test/feed/atom/" />
 
 	<generator uri="https://wordpress.org/" version="6.8.1">WordPress</generator>
-<icon>/wp-content/uploads/cropped-Teklab_logo-32x32.png</icon>
+<icon>/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-32x32.png</icon>
 </feed>
 
-<!-- plugin=object-cache-pro client=phpredis metric#hits=1542 metric#misses=8 metric#hit-ratio=99.5 metric#bytes=11833443 metric#prefetches=0 metric#store-reads=164 metric#store-writes=4 metric#store-hits=236 metric#store-misses=5 metric#sql-queries=26 metric#ms-total=751.84 metric#ms-cache=87.15 metric#ms-cache-avg=0.5218 metric#ms-cache-ratio=11.6 -->
+<!-- plugin=object-cache-pro client=phpredis metric#hits=1539 metric#misses=7 metric#hit-ratio=99.6 metric#bytes=14816042 metric#prefetches=0 metric#store-reads=164 metric#store-writes=3 metric#store-hits=237 metric#store-misses=4 metric#sql-queries=26 metric#ms-total=2604.54 metric#ms-cache=468.90 metric#ms-cache-avg=2.8247 metric#ms-cache-ratio=18.0 -->

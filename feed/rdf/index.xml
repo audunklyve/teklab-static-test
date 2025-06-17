@@ -6,9 +6,9 @@
 	xmlns:admin="http://webns.net/mvcb/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
 	>
-<channel rdf:about="/">
+<channel rdf:about="/teklab-static-test/">
 	<title>TekLab</title>
-	<link>/</link>
+	<link>/teklab-static-test/</link>
 	<description></description>
 	<dc:date>2025-05-14T14:50:26Z	</dc:date>
 	<sy:updatePeriod>
@@ -24,4 +24,4 @@
 </channel>
 </rdf:RDF>
 
-<!-- plugin=object-cache-pro client=phpredis metric#hits=1506 metric#misses=7 metric#hit-ratio=99.5 metric#bytes=11823131 metric#prefetches=0 metric#store-reads=158 metric#store-writes=4 metric#store-hits=231 metric#store-misses=4 metric#sql-queries=26 metric#ms-total=308.20 metric#ms-cache=30.07 metric#ms-cache-avg=0.1868 metric#ms-cache-ratio=9.8 sample#redis-hits=2171845 sample#redis-misses=156068 sample#redis-hit-ratio=93.3 sample#redis-ops-per-sec=305 sample#redis-evicted-keys=0 sample#redis-used-memory=18685976 sample#redis-used-memory-rss=31522816 sample#redis-memory-fragmentation-ratio=1.7 sample#redis-connected-clients=3 sample#redis-tracking-clients=0 sample#redis-rejected-connections=0 sample#redis-keys=821 -->
+<!-- plugin=object-cache-pro client=phpredis metric#hits=1528 metric#misses=6 metric#hit-ratio=99.6 metric#bytes=14811450 metric#prefetches=0 metric#store-reads=162 metric#store-writes=3 metric#store-hits=236 metric#store-misses=3 metric#sql-queries=26 metric#ms-total=7879.83 metric#ms-cache=1088.35 metric#ms-cache-avg=6.6363 metric#ms-cache-ratio=13.8 -->
