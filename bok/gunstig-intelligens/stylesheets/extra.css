@@ -1,0 +1,52 @@
+
+[data-md-color-scheme="default"] {
+    --md-typeset-a-color: #e92063 !important;
+}
+
+/*
+[data-md-color-scheme="slate"] {
+    --md-typeset-a-color: #dc38c1 !important;
+}
+*/ 
+
+.md-nav__title[for="__drawer"] {
+    display: none;
+}
+
+.md-content {
+    max-width: 806.9px;
+    margin: auto;
+  }
+
+  .innhold {
+    max-width: 500px;
+    line-height: 2.5;
+    margin: auto;
+  }
+
+  .forside-bilde {
+    height: 80vh !important;
+  }
+  
+  .admonition {
+    border: none !important;
+    margin-top: 3.5em !important;
+    margin-bottom: 3em !important;
+    margin-left: 2em !important;
+    margin-right: 2em !important;
+  }
+  .admonition p:not(.admonition-title){
+    font-size: 0.75rem !important;
+  }
+  .admonition-title {
+    font-weight: 400 !important;
+  }
+
+  .text-right-italic {
+    text-align: right;
+    font-style: italic;
+  }
+
+  code {
+    font-family: "Arial";
+  }
