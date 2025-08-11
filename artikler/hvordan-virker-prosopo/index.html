@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- WP_HEAD() START -->
-<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Rubik:100,200,300,400,500,600,700,800,900">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Rubik:100,200,300,400,500,600,700,800,900">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900%7CPoppins:100,200,300,400,500,600,700,800,900%7CRubik:100,200,300,400,500,600,700,800,900">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900%7CPoppins:100,200,300,400,500,600,700,800,900%7CRubik:100,200,300,400,500,600,700,800,900">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
 <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
@@ -31,39 +31,50 @@
 <meta name="twitter:title" content="Hvordan virker Prosopo? - TekLab">
 <meta name="twitter:creator" content="@gulbrandsen">
 <meta name="twitter:image" content="/teklab-static-test/wp-content/uploads/IMG_1989.jpg">
-<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["CollegeOrUniversity","Organization"],"@id":"/teklab-static-test/#organization","name":"TekLab","url":"/teklab-static-test","logo":{"@type":"ImageObject","@id":"/teklab-static-test/#logo","url":"/teklab-static-test/wp-content/uploads/LogoSvart.png","contentUrl":"/teklab-static-test/wp-content/uploads/LogoSvart.png","caption":"TekLab","inLanguage":"nb-NO","width":"2196","height":"2052"}},{"@type":"WebSite","@id":"/teklab-static-test/#website","url":"/teklab-static-test","name":"TekLab","publisher":{"@id":"/teklab-static-test/#organization"},"inLanguage":"nb-NO"},{"@type":"ImageObject","@id":"/teklab-static-test/wp-content/uploads/IMG_1989.jpg","url":"/teklab-static-test/wp-content/uploads/IMG_1989.jpg","width":"1083","height":"635","inLanguage":"nb-NO"},{"@type":"WebPage","@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#webpage","url":"/teklab-static-test/artikler/hvordan-virker-prosopo/","name":"Hvordan virker Prosopo? - TekLab","datePublished":"2017-10-02T17:20:40+02:00","dateModified":"2021-06-15T12:38:41+02:00","isPartOf":{"@id":"/teklab-static-test/#website"},"primaryImageOfPage":{"@id":"/teklab-static-test/wp-content/uploads/IMG_1989.jpg"},"inLanguage":"nb-NO"},{"@type":"Person","@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#author","name":"Trym Røed Arvesen","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/58616c7cf51d99615bbb20ad3a123cedd50527c23d2d2217a356e1f2f21e85f4?s=96&d=mm&r=g","url":"https://secure.gravatar.com/avatar/58616c7cf51d99615bbb20ad3a123cedd50527c23d2d2217a356e1f2f21e85f4?s=96&d=mm&r=g","caption":"Trym Røed Arvesen","inLanguage":"nb-NO"},"sameAs":["https://twitter.com/audun.gulbrandsen"],"worksFor":{"@id":"/teklab-static-test/#organization"}},{"@type":"Article","headline":"Hvordan virker Prosopo? - TekLab","datePublished":"2017-10-02T17:20:40+02:00","dateModified":"2021-06-15T12:38:41+02:00","author":{"@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#author","name":"Trym Røed Arvesen"},"publisher":{"@id":"/teklab-static-test/#organization"},"name":"Hvordan virker Prosopo? - TekLab","@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#richSnippet","isPartOf":{"@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#webpage"},"image":{"@id":"/teklab-static-test/wp-content/uploads/IMG_1989.jpg"},"inLanguage":"nb-NO","mainEntityOfPage":{"@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#webpage"}}]}</script>
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["CollegeOrUniversity","Organization"],"@id":"/teklab-static-test/#organization","name":"TekLab","url":"/teklab-static-test","logo":{"@type":"ImageObject","@id":"/teklab-static-test/#logo","url":"/teklab-static-test/wp-content/uploads/LogoSvart.png","contentUrl":"/teklab-static-test/wp-content/uploads/LogoSvart.png","caption":"TekLab","inLanguage":"nb-NO","width":"2196","height":"2052"}},{"@type":"WebSite","@id":"/teklab-static-test/#website","url":"/teklab-static-test","name":"TekLab","publisher":{"@id":"/teklab-static-test/#organization"},"inLanguage":"nb-NO"},{"@type":"ImageObject","@id":"/teklab-static-test/wp-content/uploads/IMG_1989.jpg","url":"/teklab-static-test/wp-content/uploads/IMG_1989.jpg","width":"1083","height":"635","inLanguage":"nb-NO"},{"@type":"WebPage","@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#webpage","url":"/teklab-static-test/artikler/hvordan-virker-prosopo/","name":"Hvordan virker Prosopo? - TekLab","datePublished":"2017-10-02T17:20:40+02:00","dateModified":"2021-06-15T12:38:41+02:00","isPartOf":{"@id":"/teklab-static-test/#website"},"primaryImageOfPage":{"@id":"/teklab-static-test/wp-content/uploads/IMG_1989.jpg"},"inLanguage":"nb-NO"},{"@type":"Person","@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#author","name":"Trym R\u00f8ed Arvesen","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/58616c7cf51d99615bbb20ad3a123cedd50527c23d2d2217a356e1f2f21e85f4?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/58616c7cf51d99615bbb20ad3a123cedd50527c23d2d2217a356e1f2f21e85f4?s=96&amp;d=mm&amp;r=g","caption":"Trym R\u00f8ed Arvesen","inLanguage":"nb-NO"},"sameAs":["https://twitter.com/audun.gulbrandsen"],"worksFor":{"@id":"/teklab-static-test/#organization"}},{"@type":"Article","headline":"Hvordan virker Prosopo? - TekLab","datePublished":"2017-10-02T17:20:40+02:00","dateModified":"2021-06-15T12:38:41+02:00","author":{"@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#author","name":"Trym R\u00f8ed Arvesen"},"publisher":{"@id":"/teklab-static-test/#organization"},"name":"Hvordan virker Prosopo? - TekLab","@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#richSnippet","isPartOf":{"@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#webpage"},"image":{"@id":"/teklab-static-test/wp-content/uploads/IMG_1989.jpg"},"inLanguage":"nb-NO","mainEntityOfPage":{"@id":"/teklab-static-test/artikler/hvordan-virker-prosopo/#webpage"}}]}</script>
 <!-- /Rank Math WordPress SEO plugin -->
 
-<link rel="alternate" type="application/rss+xml" title="TekLab &raquo; strøm" href="/teklab-static-test/feed/">
-<link rel="alternate" type="application/rss+xml" title="TekLab &raquo; kommentarstrøm" href="/teklab-static-test/comments/feed/">
-<style id="wp-block-library-inline-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}</style>
-<style id="classic-theme-styles-inline-css">/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
-<style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #ffffff;--wp--preset--color--contrast: #000000;--wp--preset--color--primary: #9DFF20;--wp--preset--color--secondary: #345C00;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.227), 1.125rem);--wp--preset--font-size--large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.227), 1.875rem);--wp--preset--font-size--x-large: 2.25rem;--wp--preset--font-size--xx-large: clamp(6.1rem, 6.1rem + ((1vw - 0.2rem) * 7.091), 10rem);--wp--preset--font-family--dm-sans: "DM Sans", sans-serif;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: clamp(1.5rem, 5vw, 2rem);--wp--preset--spacing--40: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);--wp--preset--spacing--50: clamp(2.5rem, 8vw, 4.5rem);--wp--preset--spacing--60: clamp(3.75rem, 10vw, 7rem);--wp--preset--spacing--70: clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem);--wp--preset--spacing--80: clamp(7rem, 14vw, 11rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.5rem;}:root :where(.is-layout-grid){gap: 1.5rem;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="alternate" type="application/rss+xml" title="TekLab &raquo; str&oslash;m" href="/teklab-static-test/feed/">
+<link rel="alternate" type="application/rss+xml" title="TekLab &raquo; kommentarstr&oslash;m" href="/teklab-static-test/comments/feed/">
+<style id="wp-block-library-inline-css">
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #ffffff;--wp--preset--color--contrast: #000000;--wp--preset--color--primary: #9DFF20;--wp--preset--color--secondary: #345C00;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.227), 1.125rem);--wp--preset--font-size--large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.227), 1.875rem);--wp--preset--font-size--x-large: 2.25rem;--wp--preset--font-size--xx-large: clamp(6.1rem, 6.1rem + ((1vw - 0.2rem) * 7.091), 10rem);--wp--preset--font-family--dm-sans: "DM Sans", sans-serif;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: clamp(1.5rem, 5vw, 2rem);--wp--preset--spacing--40: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);--wp--preset--spacing--50: clamp(2.5rem, 8vw, 4.5rem);--wp--preset--spacing--60: clamp(3.75rem, 10vw, 7rem);--wp--preset--spacing--70: clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem);--wp--preset--spacing--80: clamp(7rem, 14vw, 11rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.5rem;}:root :where(.is-layout-grid){gap: 1.5rem;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
 <link rel="stylesheet" id="oxygen-css" href="/teklab-static-test/wp-content/plugins/oxygen/component-framework/oxygen.css" media="all">
 <link rel="stylesheet" id="bodhi-svgs-attachment-css" href="/teklab-static-test/wp-content/plugins/svg-support/css/svgs-attachment.css" media="all">
-<style id="wpgb-head-inline-css">.wp-grid-builder:not(.wpgb-template),.wpgb-facet{opacity:0.01}.wpgb-facet fieldset{margin:0;padding:0;border:none;outline:none;box-shadow:none}.wpgb-facet fieldset:last-child{margin-bottom:40px;}.wpgb-facet fieldset legend.wpgb-sr-only{height:1px;width:1px}</style>
+<style id="wpgb-head-inline-css">
+.wp-grid-builder:not(.wpgb-template),.wpgb-facet{opacity:0.01}.wpgb-facet fieldset{margin:0;padding:0;border:none;outline:none;box-shadow:none}.wpgb-facet fieldset:last-child{margin-bottom:40px;}.wpgb-facet fieldset legend.wpgb-sr-only{height:1px;width:1px}
+</style>
 <link rel="stylesheet" id="ssp-search-css" href="/teklab-static-test/wp-content/plugins/simply-static-pro/assets/ssp-search.css" media="all">
 <link rel="stylesheet" id="moove_gdpr_frontend-css" href="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/styles/gdpr-main.css" media="all">
-<style id="moove_gdpr_frontend-inline-css">#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:Nunito,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#027bc1;border-color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#027bc1;border:1px solid #027bc1}#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus,#moove_gdpr_cookie_info_bar button.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar button.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #027bc1;-moz-box-shadow:0 0 1px 3px #027bc1;box-shadow:0 0 1px 3px #027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,button.change-settings-button.focus-g,button.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-branding.focus-g span,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main a.focus-g{color:#027bc1}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}</style>
+<style id="moove_gdpr_frontend-inline-css">
+#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:&#039;Nunito&#039;,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#027bc1;border-color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#027bc1;border:1px solid #027bc1}#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus,#moove_gdpr_cookie_info_bar button.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar button.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #027bc1;-moz-box-shadow:0 0 1px 3px #027bc1;box-shadow:0 0 1px 3px #027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,button.change-settings-button.focus-g,button.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#027bc1}#moove_gdpr_cookie_modal .moove-gdpr-branding.focus-g span,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main a.focus-g{color:#027bc1}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}
+</style>
 <script src="/teklab-static-test/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
-<link rel="https://api.w.org/" href="/teklab-static-test/wp-json/">
-<link rel="alternate" title="JSON" type="application/json" href="/teklab-static-test/wp-json/wp/v2/artikler/908">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/teklab-static-test/xmlrpc.php?rsd">
+<link rel="https://api.w.org/" href="/teklab-static-test/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/teklab-static-test/wp-json/wp/v2/artikler/908"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/teklab-static-test/xmlrpc.php?rsd">
 
 
 <link rel="shortlink" href="/teklab-static-test/?p=908">
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/teklab-static-test/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fartikler%2Fhvordan-virker-prosopo%2F">
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/teklab-static-test/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fartikler%2Fhvordan-virker-prosopo%2F#038;format=xml">
-<style type="text/css">.feedzy-rss-link-icon:after {
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/teklab-static-test/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fartikler%2Fhvordan-virker-prosopo%2F&amp;format=xml">
+<style type="text/css">
+.feedzy-rss-link-icon:after {
 	content: url("/teklab-static-test/wp-content/plugins/feedzy-rss-feeds/img/external-link.png");
 	margin-left: 3px;
-}</style>
+}
+</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="alternate" type="application/rss+xml" title="Podcast RSS feed" href="/teklab-static-test/feed/podcast">
 
-<script type="text/javascript">(function(url){
+<script type="text/javascript">
+(function(url){
 	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
 	var addEvent = function(evt, handler) {
 		if (window.addEventListener) {
@@ -95,12 +106,11 @@
 	for (var i = 0; i < evts.length; i++) {
 		addEvent(evts[i], logHuman);
 	}
-})('/teklab-static-test/?wordfence_lh=1&hid=7C7984C23DD0EF59D41100B6B654433B');</script><noscript><style>.wp-grid-builder .wpgb-card.wpgb-card-hidden .wpgb-card-wrapper{opacity:1!important;visibility:visible!important;transform:none!important}.wpgb-facet {opacity:1!important;pointer-events:auto!important}.wpgb-facet *:not(.wpgb-pagination-facet){display:none}</style></noscript>			                <meta name="ssp-config-path" content="/teklab-static-test/wp-content/uploads/simply-static/configs/">
+})('/teklab-static-test/?wordfence_lh=1&hid=40116525F32391ACFEEA770FC5D69FFA');
+</script><noscript><style>.wp-grid-builder .wpgb-card.wpgb-card-hidden .wpgb-card-wrapper{opacity:1!important;visibility:visible!important;transform:none!important}.wpgb-facet {opacity:1!important;pointer-events:auto!important}.wpgb-facet *:not(.wpgb-pagination-facet){display:none}</style></noscript>			                <meta name="ssp-config-path" content="/teklab-static-test/wp-content/uploads/simply-static/configs/">
 			
-						<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript>
-<style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style>
-<style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style>
-<style class="wp-fonts-local">@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}
+						<style class="wp-fonts-local">
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}
 @font-face{font-family:"DM Sans";font-style:italic;font-weight:400;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Regular-Italic.woff2') format('woff2');font-stretch:normal;}
 @font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');font-stretch:normal;}
 @font-face{font-family:"DM Sans";font-style:italic;font-weight:700;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/dm-sans/DMSans-Bold-Italic.woff2') format('woff2');font-stretch:normal;}
@@ -110,125 +120,84 @@
 @font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:700;font-display:block;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2') format('woff2');font-stretch:normal;}
 @font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');font-stretch:normal;}
 @font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}
-@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}</style>
+@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('/teklab-static-test/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
+</style>
 <link rel="icon" href="/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-32x32.png" sizes="32x32">
 <link rel="icon" href="/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-180x180.png">
 <meta name="msapplication-TileImage" content="/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-270x270.png">
-<link rel="stylesheet" id="oxygen-cache-28-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/28.css?cache=1743676684#038;ver=6.8.1" media="all">
-<link rel="stylesheet" id="oxygen-cache-339-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/339.css?cache=1743676661#038;ver=6.8.1" media="all">
-<link rel="stylesheet" id="oxygen-universal-styles-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/universal.css?cache=1743682180#038;ver=6.8.1" media="all">
+<link rel="stylesheet" id="oxygen-cache-28-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/28.css?cache=1750226326&amp;ver=6.8.2" media="all">
+<link rel="stylesheet" id="oxygen-cache-339-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/339.css?cache=1754860133&amp;ver=6.8.2" media="all">
+<link rel="stylesheet" id="oxygen-universal-styles-css" href="/teklab-static-test/wp-content/uploads/oxygen/css/universal.css?cache=1754860133&amp;ver=6.8.2" media="all">
 <style id="custom-css-pro">.widget_podcast_playlist {
     list-style: none;
 }</style><!-- END OF WP_HEAD() -->
 </head>
-<body class="wp-singular artikler-template-default single single-artikler postid-908 wp-embed-responsive wp-theme-oxygen-is-not-a-theme  oxygen-body">
-<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+<body class="wp-singular artikler-template-default single single-artikler postid-908 single-format-standard wp-embed-responsive wp-theme-oxygen-is-not-a-theme  oxygen-body">
 
 
 
 
-						<header id="_header-20-28" class="oxy-header-wrapper oxy-sticky-header oxy-overlay-header oxy-header"><div id="_header_row-21-28" class="oxygen-hide-in-sticky oxy-header-row"><div class="oxy-header-container">
-<div id="_header_left-22-28" class="oxy-header-left"><a id="link-72-28" class="ct-link" href="/teklab-static-test/"><img id="image-73-28" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAcCAQAAAABUocK4AAAAAnRSTlMAAHaTzTgAAAG5SURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBjmTwAAfQ/XjIAAAAASUVORK5CYII=" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/teklab_logo_svart.png" decoding="async" data-eio-rwidth="2196" data-eio-rheight="2052"><noscript><img id="image-73-28" alt="" src="/teklab-static-test/wp-content/uploads/teklab_logo_svart.png" class="ct-image" data-eio="l"></noscript></a></div>
-<div id="_header_center-25-28" class="oxy-header-center"></div>
-<div id="_header_right-26-28" class="oxy-header-right">
-<nav id="_nav_menu-27-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger">
-<div class="oxy-nav-menu-hamburger-line"></div>
-<div class="oxy-nav-menu-hamburger-line"></div>
-<div class="oxy-nav-menu-hamburger-line"></div>
-</div></div></div>
-<div class="menu-main-menu-container"><ul id="menu-main-menu" class="oxy-nav-menu-list">
-<li id="menu-item-725" class="about-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-725">
-<a href="#">Om TekLab</a>
+						<header id="_header-20-28" class="oxy-header-wrapper oxy-sticky-header oxy-overlay-header oxy-header"><div id="_header_row-21-28" class="oxygen-hide-in-sticky oxy-header-row"><div class="oxy-header-container"><div id="_header_left-22-28" class="oxy-header-left"><a id="link-72-28" class="ct-link" href="/teklab-static-test/"><picture><source srcset="/teklab-static-test/wp-content/uploads/teklab_logo_svart.webp " type="image/webp"><img src="/teklab-static-test/wp-content/uploads/teklab_logo_svart.png" id="image-73-28" class="ct-image sp-no-webp" alt=""> </source></picture></a></div><div id="_header_center-25-28" class="oxy-header-center"></div><div id="_header_right-26-28" class="oxy-header-right"><nav id="_nav_menu-27-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger"><div class="oxy-nav-menu-hamburger-line"></div><div class="oxy-nav-menu-hamburger-line"></div><div class="oxy-nav-menu-hamburger-line"></div></div></div></div><div class="menu-main-menu-container"><ul id="menu-main-menu" class="oxy-nav-menu-list"><li id="menu-item-6201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6201"><a href="/teklab-static-test/om-teklab/">Om TekLab</a>
 <ul class="sub-menu">
 	<li id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a href="/teklab-static-test/om-teklab/">Om TekLab</a></li>
 	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="/teklab-static-test/medlemmer/">Team</a></li>
 	<li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="/teklab-static-test/samarbeidspartnere/">Samarbeidspartnere</a></li>
 </ul>
 </li>
-<li id="menu-item-1181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1181">
-<a href="/teklab-static-test/prosjekter/?_kategori=prototype%2Cmedieproduksjon">Prosjekter</a>
+<li id="menu-item-6230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6230"><a href="/teklab-static-test/prosjekter/">Prosjekter</a>
 <ul class="sub-menu">
-	<li id="menu-item-1979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1979"><a href="/teklab-static-test/prosjekter/?_kategori=evaluering">Evalueringer</a></li>
-	<li id="menu-item-1180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1180"><a href="/teklab-static-test/prosjekter/?_kategori=medieproduksjon">Medieproduksjoner</a></li>
-	<li id="menu-item-1826" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1826"><a href="/teklab-static-test/prosjekter/?_kategori=podcast">Podcaster</a></li>
-	<li id="menu-item-225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-225"><a href="/teklab-static-test/prosjekter/?_kategori=prototype">Prototyper</a></li>
+	<li id="menu-item-6227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6227"><a href="/teklab-static-test/evalueringer/">Evalueringer</a></li>
+	<li id="menu-item-6228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6228"><a href="/teklab-static-test/medieproduksjoner/">Medieproduksjoner</a></li>
+	<li id="menu-item-6229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6229"><a href="/teklab-static-test/podcaster/">Podcaster</a></li>
+	<li id="menu-item-6242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6242"><a href="/teklab-static-test/prototyper/">Prototyper</a></li>
 </ul>
 </li>
-<li id="menu-item-4638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4638">
-<a href="/teklab-static-test/books/">Publikasjoner</a>
+<li id="menu-item-4638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4638"><a href="/teklab-static-test/books/">Publikasjoner</a>
 <ul class="sub-menu">
-	<li id="menu-item-4639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4639"><a href="/teklab-static-test/books/">Bøker</a></li>
+	<li id="menu-item-4639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4639"><a href="/teklab-static-test/books/">B&oslash;ker</a></li>
 </ul>
 </li>
-<li id="menu-item-223" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223"><a href="/teklab-static-test/forskning/?_kategori=forskning">Forskning</a></li>
-<li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"><a href="/teklab-static-test/utdanning/?_kategori=utdanning">Utdanning</a></li>
-<li id="menu-item-1710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1710"><a href="/teklab-static-test/events/">Arrangementer</a></li>
-</ul></div></nav><a id="link-247-28" class="ct-link" href="/teklab-static-test/sok/"><img id="image-246-28" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/sok.svg" decoding="async"><noscript><img id="image-246-28" alt="" src="/teklab-static-test/wp-content/uploads/sok.svg" class="ct-image" data-eio="l"></noscript></a>
-</div>
-</div></div>
-<div id="_header_row-74-28" class="oxygen-show-in-sticky-only oxy-header-row"><div class="oxy-header-container">
-<div id="_header_left-75-28" class="oxy-header-left"><a id="link-76-28" class="ct-link" href="/teklab-static-test/"><img id="image-77-28" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAHeAQAAAABSjSvWAAAAAnRSTlMAAHaTzTgAAACGSURBVHja7cExAQAAAMKg9U9tDB+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G3CDQABn/KPWwAAAABJRU5ErkJggg==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" decoding="async" data-eio-rwidth="2560" data-eio-rheight="637"><noscript><img id="image-77-28" alt="" src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" class="ct-image" data-eio="l"></noscript></a></div>
-<div id="_header_center-78-28" class="oxy-header-center"></div>
-<div id="_header_right-79-28" class="oxy-header-right">
-<nav id="_nav_menu-220-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger">
-<div class="oxy-nav-menu-hamburger-line"></div>
-<div class="oxy-nav-menu-hamburger-line"></div>
-<div class="oxy-nav-menu-hamburger-line"></div>
-</div></div></div>
-<div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="oxy-nav-menu-list">
-<li class="about-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-725">
-<a href="#">Om TekLab</a>
+<li id="menu-item-6232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6232"><a href="/teklab-static-test/forskning/">Forskning</a></li>
+<li id="menu-item-6233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6233"><a href="/teklab-static-test/utdanning/">Utdanning</a></li>
+<li id="menu-item-6237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6237"><a href="/teklab-static-test/events/">Arrangementer</a></li>
+</ul></div></nav><a id="link-247-28" class="ct-link" href="/teklab-static-test/sok/"><img id="image-246-28" alt="" src="/teklab-static-test/wp-content/uploads/sok.svg" class="ct-image"></a></div></div></div><div id="_header_row-74-28" class="oxygen-show-in-sticky-only oxy-header-row"><div class="oxy-header-container"><div id="_header_left-75-28" class="oxy-header-left"><a id="link-76-28" class="ct-link" href="/teklab-static-test/"><picture><source srcset="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.webp " type="image/webp"><img src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" id="image-77-28" class="ct-image sp-no-webp" alt=""> </source></picture></a></div><div id="_header_center-78-28" class="oxy-header-center"></div><div id="_header_right-79-28" class="oxy-header-right"><nav id="_nav_menu-220-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger"><div class="oxy-nav-menu-hamburger-line"></div><div class="oxy-nav-menu-hamburger-line"></div><div class="oxy-nav-menu-hamburger-line"></div></div></div></div><div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="oxy-nav-menu-list"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6201"><a href="/teklab-static-test/om-teklab/">Om TekLab</a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a href="/teklab-static-test/om-teklab/">Om TekLab</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="/teklab-static-test/medlemmer/">Team</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="/teklab-static-test/samarbeidspartnere/">Samarbeidspartnere</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1181">
-<a href="/teklab-static-test/prosjekter/?_kategori=prototype%2Cmedieproduksjon">Prosjekter</a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6230"><a href="/teklab-static-test/prosjekter/">Prosjekter</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1979"><a href="/teklab-static-test/prosjekter/?_kategori=evaluering">Evalueringer</a></li>
-	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1180"><a href="/teklab-static-test/prosjekter/?_kategori=medieproduksjon">Medieproduksjoner</a></li>
-	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1826"><a href="/teklab-static-test/prosjekter/?_kategori=podcast">Podcaster</a></li>
-	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-225"><a href="/teklab-static-test/prosjekter/?_kategori=prototype">Prototyper</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6227"><a href="/teklab-static-test/evalueringer/">Evalueringer</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6228"><a href="/teklab-static-test/medieproduksjoner/">Medieproduksjoner</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6229"><a href="/teklab-static-test/podcaster/">Podcaster</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6242"><a href="/teklab-static-test/prototyper/">Prototyper</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4638">
-<a href="/teklab-static-test/books/">Publikasjoner</a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4638"><a href="/teklab-static-test/books/">Publikasjoner</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4639"><a href="/teklab-static-test/books/">Bøker</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4639"><a href="/teklab-static-test/books/">B&oslash;ker</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223"><a href="/teklab-static-test/forskning/?_kategori=forskning">Forskning</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"><a href="/teklab-static-test/utdanning/?_kategori=utdanning">Utdanning</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1710"><a href="/teklab-static-test/events/">Arrangementer</a></li>
-</ul></div></nav><a id="link-248-28" class="ct-link" href="/teklab-static-test/sok/"><img id="image-249-28" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/sok.svg" decoding="async"><noscript><img id="image-249-28" alt="" src="/teklab-static-test/wp-content/uploads/sok.svg" class="ct-image" data-eio="l"></noscript></a>
-</div>
-</div></div>
-<div id="_header_row-122-28" class="oxy-header-row"><div class="oxy-header-container">
-<div id="_header_left-123-28" class="oxy-header-left"><a id="link-124-28" class="ct-link" href="/teklab-static-test/"><img id="image-125-28" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAHeAQAAAABSjSvWAAAAAnRSTlMAAHaTzTgAAACGSURBVHja7cExAQAAAMKg9U9tDB+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G3CDQABn/KPWwAAAABJRU5ErkJggg==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" decoding="async" data-eio-rwidth="2560" data-eio-rheight="637"><noscript><img id="image-125-28" alt="" src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" class="ct-image" data-eio="l"></noscript></a></div>
-<div id="_header_center-126-28" class="oxy-header-center"></div>
-<div id="_header_right-128-28" class="oxy-header-right"><nav id="_nav_menu-127-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow oxy-nav-menu-responsive-dropdowns"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger">
-<div class="oxy-nav-menu-hamburger-line"></div>
-<div class="oxy-nav-menu-hamburger-line"></div>
-<div class="oxy-nav-menu-hamburger-line"></div>
-</div></div></div>
-<div class="menu-mobile-menu-container"><ul id="menu-mobile-menu" class="oxy-nav-menu-list">
-<li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a href="/teklab-static-test/om-teklab/">Om TekLab</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6232"><a href="/teklab-static-test/forskning/">Forskning</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6233"><a href="/teklab-static-test/utdanning/">Utdanning</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6237"><a href="/teklab-static-test/events/">Arrangementer</a></li>
+</ul></div></nav><a id="link-248-28" class="ct-link" href="/teklab-static-test/sok/"><img id="image-249-28" alt="" src="/teklab-static-test/wp-content/uploads/sok.svg" class="ct-image"></a></div></div></div><div id="_header_row-122-28" class="oxy-header-row"><div class="oxy-header-container"><div id="_header_left-123-28" class="oxy-header-left"><a id="link-124-28" class="ct-link" href="/teklab-static-test/"><picture><source srcset="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.webp " type="image/webp"><img src="/teklab-static-test/wp-content/uploads/teklab_logo_liggende_svart.png" id="image-125-28" class="ct-image sp-no-webp" alt=""> </source></picture></a></div><div id="_header_center-126-28" class="oxy-header-center"></div><div id="_header_right-128-28" class="oxy-header-right"><nav id="_nav_menu-127-28" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow oxy-nav-menu-responsive-dropdowns"><div class="oxy-menu-toggle"><div class="oxy-nav-menu-hamburger-wrap"><div class="oxy-nav-menu-hamburger"><div class="oxy-nav-menu-hamburger-line"></div><div class="oxy-nav-menu-hamburger-line"></div><div class="oxy-nav-menu-hamburger-line"></div></div></div></div><div class="menu-mobile-menu-container"><ul id="menu-mobile-menu" class="oxy-nav-menu-list"><li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a href="/teklab-static-test/om-teklab/">Om TekLab</a></li>
 <li id="menu-item-727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-727"><a href="/teklab-static-test/medlemmer/">Team</a></li>
 <li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728"><a href="/teklab-static-test/samarbeidspartnere/">Samarbeidspartnere</a></li>
-<li id="menu-item-729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-729"><a href="/teklab-static-test/prototyper/?_kategori=prototype">Prototyper</a></li>
-<li id="menu-item-1712" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1712"><a href="/teklab-static-test/prosjekter/?_kategori=medieproduksjon">Medieproduksjoner</a></li>
-<li id="menu-item-4640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4640"><a href="/teklab-static-test/books/">Bøker</a></li>
-<li id="menu-item-1825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1825"><a href="/teklab-static-test/prosjekter/?_kategori=podcast">Podcaster</a></li>
-<li id="menu-item-730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-730"><a href="/teklab-static-test/forskning/?_kategori=forskning">Forskning</a></li>
-<li id="menu-item-731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-731"><a href="/teklab-static-test/utdanning/?_kategori=utdanning">Utdanning</a></li>
+<li id="menu-item-729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-729"><a href="/teklab-static-test/prototyper">Prototyper</a></li>
+<li id="menu-item-1712" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1712"><a href="/teklab-static-test/medieproduksjoner">Medieproduksjoner</a></li>
+<li id="menu-item-4640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4640"><a href="/teklab-static-test/books/">B&oslash;ker</a></li>
+<li id="menu-item-1825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1825"><a href="/teklab-static-test/podcaster">Podcaster</a></li>
+<li id="menu-item-730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-730"><a href="/teklab-static-test/forskning">Forskning</a></li>
+<li id="menu-item-731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-731"><a href="/teklab-static-test/utdanning">Utdanning</a></li>
 <li id="menu-item-1713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1713"><a href="/teklab-static-test/events/">Arrangementer</a></li>
-<li id="menu-item-1058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1058"><a href="/teklab-static-test/sok/">Søk</a></li>
-</ul></div></nav></div>
-</div></div></header>
-				<script type="text/javascript">jQuery(document).ready(function() {
+<li id="menu-item-1058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1058"><a href="/teklab-static-test/sok/">S&oslash;k</a></li>
+</ul></div></nav></div></div></div></header>
+				<script type="text/javascript">
+			jQuery(document).ready(function() {
 				var selector = "#_header-20-28",
 					scrollval = parseInt("40");
 				if (!scrollval || scrollval < 1) {
@@ -265,27 +234,14 @@
 						}
 					})
 				}
-			});</script><section id="section-3-274" class=" ct-section"><div class="ct-section-inner-wrap">
-<h1 id="headline-4-274" class="ct-headline"><span id="span-14-274" class="ct-span">Hvordan virker Prosopo?</span></h1>
-<div id="new_columns-82-339" class="ct-new-columns">
-<div id="div_block-83-339" class="ct-div-block"><div id="text_block-5-274" class="ct-text-block"><span id="span-16-274" class="ct-span">Prosopo er et verktøy for ansikts-anonymisering i visuelle medier, laget av forskere ved Universitetet i Bergen. Prosjektet har forsøkt å utfordre presseetikkens nullmanipuleringsprinsipp.</span></div></div>
-<div id="div_block-84-339" class="ct-div-block"></div>
-</div>
-<div id="new_columns-8-274" class="ct-new-columns">
-<div id="div_block-9-274" class="ct-div-block">
-<img id="image-12-274" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABDsAAAJ7AQAAAADFQKfZAAAAAnRSTlMAAHaTzTgAAABrSURBVHja7cExAQAAAMKg9U9tBn+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA1T4gABd9E33AAAAABJRU5ErkJggg==" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/IMG_1989.jpg" decoding="async" data-eio-rwidth="1083" data-eio-rheight="635"><noscript><img id="image-12-274" alt="" src="/teklab-static-test/wp-content/uploads/IMG_1989.jpg" class="ct-image" data-eio="l"></noscript>
-<div id="text_block-87-339" class="ct-text-block"><span id="span-88-339" class="ct-span">Joar Midtun, Simen Karlsen, Bjørnar Tessem og Lars Nyre er teamet bak Prosopo. Hvordan virker dette manipuleringsverktøyet?</span></div>
-<div id="code_block-122-339" class="ct-code-block"></div>
-</div>
-<div id="div_block-10-274" class="ct-div-block">
-<div id="code_block-118-339" class="ct-code-block">
-<!-- Start Repeater -->
+			});
+		</script><section id="section-3-274" class=" ct-section"><div class="ct-section-inner-wrap"><h1 id="headline-4-274" class="ct-headline"><span id="span-14-274" class="ct-span">Hvordan virker Prosopo?</span></h1><div id="new_columns-82-339" class="ct-new-columns"><div id="div_block-83-339" class="ct-div-block"><div id="text_block-5-274" class="ct-text-block"><span id="span-16-274" class="ct-span static-ingress">Prosopo er et verkt&oslash;y for ansikts-anonymisering i visuelle medier, laget av forskere ved Universitetet i Bergen. Prosjektet har fors&oslash;kt &aring; utfordre presseetikkens nullmanipuleringsprinsipp.</span></div></div><div id="div_block-84-339" class="ct-div-block"></div></div><div id="new_columns-8-274" class="ct-new-columns"><div id="div_block-9-274" class="ct-div-block"><picture><source srcset="/teklab-static-test/wp-content/uploads/IMG_1989.webp " type="image/webp"><img src="/teklab-static-test/wp-content/uploads/IMG_1989.jpg" id="image-12-274" class="ct-image sp-no-webp" alt=""> </source></picture><div id="text_block-87-339" class="ct-text-block"><span id="span-88-339" class="ct-span">Joar Midtun, Simen Karlsen, Bj&oslash;rnar Tessem og Lars Nyre er teamet bak Prosopo. Hvordan virker dette manipuleringsverkt&oslash;yet?</span></div><div id="code_block-122-339" class="ct-code-block"></div></div><div id="div_block-10-274" class="ct-div-block"><div id="code_block-118-339" class="ct-code-block"><!-- Start Repeater -->
 <div class="byline__container">
         	<div class="byline__item">	
 			<div class="byline__img">
-				 <img width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWAQMAAAAGz+OhAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABpJREFUGBntwTEBAAAAwiD7p14ND2AAAMC9AAu4AAHGdJuwAAAAAElFTkSuQmCC" class="attachment-50x50 size-50x50 wp-post-image lazyload" alt="1CamillaMj╟≈enLien" decoding="async" title="Camilla Mjøen Lien 1" data-src="/teklab-static-test/wp-content/uploads/1CamillaMj╟≈enLien-150x150.jpg" data-eio-rwidth="150" data-eio-rheight="150"><noscript><img width="50" height="50" src="/teklab-static-test/wp-content/uploads/1CamillaMj╟≈enLien-150x150.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="1CamillaMj╟≈enLien" decoding="async" title="Camilla Mjøen Lien 1" data-eio="l"></noscript>			</div>
+				 <picture><source srcset="/teklab-static-test/wp-content/uploads/1CamillaMj&#9567;&asymp;enLien-150x150.webp " type="image/webp"><img src="/teklab-static-test/wp-content/uploads/1CamillaMj%E2%95%9F%E2%89%88enLien-150x150.jpg" height="50" width="50" class="attachment-50x50 size-50x50 wp-post-image sp-no-webp" alt="1CamillaMj&#9567;&asymp;enLien" decoding="async" loading="lazy" title="Camilla Mj&oslash;en Lien 1"> </source></picture>			</div>
 			<div class="byline__text">
-				 <span class="byline__name">Camilla Mjøen Lien</span><br>
+				 <span class="byline__name">Camilla Mj&oslash;en Lien</span><br>
 				 <span class="byline__role"></span>
 			</div>
 		
@@ -296,156 +252,78 @@
 	
     </div>
 <!-- End Repeater -->
-</div>
-<div id="text_block-90-339" class="ct-text-block">Publisert: <span id="span-91-339" class="ct-span">2. oktober 2017</span>
-</div>
-<div id="code_block-121-339" class="ct-code-block"></div>
-</div>
-</div>
-<div id="new_columns-17-274" class="ct-new-columns">
-<div id="div_block-18-274" class="ct-div-block">
-<div id="text_block-79-339" class="ct-text-block"><span id="span-80-339" class="ct-span"><div class=" et_pb_row et_pb_row_1">
+</div><div id="text_block-90-339" class="ct-text-block">Publisert: <span id="span-91-339" class="ct-span">2. oktober 2017</span></div><div id="code_block-121-339" class="ct-code-block"></div></div></div><div id="new_columns-17-274" class="ct-new-columns"><div id="div_block-18-274" class="ct-div-block"><div id="text_block-79-339" class="ct-text-block"><span id="span-80-339" class="ct-span"><div class=" et_pb_row et_pb_row_1">
 <div class="et_pb_column et_pb_column_4_4 et_pb_column_3">
 <div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_3">
 <h2>Anonymisering ved hjelp av gjennomsnittsansikt</h2>
-<p>I dagens journalistikk er det vanlig å anonymisere kilder ved å fotografere dem med ryggen mot kamera, eller plassere en svart firkant over gjenkjennelige deler i bildet. Med Prosopo kan man istedenfor tilby leserne et realistisk ansikt.</p>
-<p>Prototypen tar utgangspunkt i en serie bilder lagt inn i programmet. Ved hjelp av data fra disse bildene vil Prosopo skape et såkalt gjennomsnitts-ansikt, og man vil som resultat sitte igjen med et bilde som ikke ligner den originale personen.</p>
-<p>Prototypen tar utgangspunkt i såkalte “Facial landmark points”, hvor ansiktstrekk regnes ut ved å analysere alt innenfor munn, øyenbryn, øyne og kjevelinje. På denne måten kan prototypen ta vare på sentrale og personlige trekk. Dette innebærer at personens alder, hudfarge og kjønn tas med i beregningen, uten at det anonymiserte bildet vil ligne på det originale. Dermed blir det en mest mulig realistisk representasjon av et ekte menneske.</p>
-<p>Prototypen åpner opp for ulik grad av anonymisering, med tre ulike skalaer. Den ene enden tilbyr et helt gjennomsnittlig ansikt, mens den motsatte siden av skalaen tilbyr et bilde av den originale personen. I midten finner man en sammensmelting av de ulike ansiktene.</p>
+<p>I dagens journalistikk er det vanlig &aring; anonymisere kilder ved &aring; fotografere dem med ryggen mot kamera, eller plassere en svart firkant over gjenkjennelige deler i bildet. Med Prosopo kan man istedenfor tilby leserne et realistisk ansikt.</p>
+<p>Prototypen tar utgangspunkt i en serie bilder lagt inn i programmet. Ved hjelp av data fra disse bildene vil Prosopo skape et s&aring;kalt gjennomsnitts-ansikt, og man vil som resultat sitte igjen med et bilde som ikke ligner den originale personen.</p>
+<p>Prototypen tar utgangspunkt i s&aring;kalte &ldquo;Facial landmark points&rdquo;, hvor ansiktstrekk regnes ut ved &aring; analysere alt innenfor munn, &oslash;yenbryn, &oslash;yne og kjevelinje. P&aring; denne m&aring;ten kan prototypen ta vare p&aring; sentrale og personlige trekk. Dette inneb&aelig;rer at personens alder, hudfarge og kj&oslash;nn tas med i beregningen, uten at det anonymiserte bildet vil ligne p&aring; det originale. Dermed blir det en mest mulig realistisk representasjon av et ekte menneske.</p>
+<p>Prototypen &aring;pner opp for ulik grad av anonymisering, med tre ulike skalaer. Den ene enden tilbyr et helt gjennomsnittlig ansikt, mens den motsatte siden av skalaen tilbyr et bilde av den originale personen. I midten finner man en sammensmelting av de ulike ansiktene.</p>
 </div>
 <div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_4">
 <h2>Responsible research and innovation</h2>
-<p>Prosopo er et delprosjekt innen VisMedia ved Universitetet i Bergen. VisMedia har som mål å utforske de visuelle mediene ut i fra et “responsible research and innovation”-perspektiv (RRI-perspektiv), eller det som kalles “ansvarlig” forskning.</p>
-<p>Det finnes en rekke kriterier for hva som faller inn under denne typen forskning. Blant annet forventes det at forskningen har en god dialog med andre samfunnsinteresser, for eksempel journalistikk, og tar sjansen på å blande de vitenskapelige metodene sammen med innspillene fra samfunnet.</p>
-<p>Professor Lars Nyre er leder for delprosjektet Prosopo. Han har forståelse for at man kan stille seg spørsmål med hva som er det ansvarlige aspektet ved Prosopo, og at det kan virke uansvarlig å forsøke og bryte med pressens etiske normer.</p>
-<p>Han forteller at sosiale medier som Snapchat allerede bruker verktøy basert på kunstig intelligens for å forvrenge ansikter, og at andre sosiale medier også er i ferd med å ta i bruk visuelle manipulasjonsverktøy.</p>
-<p>– Prosopo tar disse teknologiene på største alvor, og utforsker om de kan brukes til beste for journalistikken. Så langt har vi testet en teknologi for anonymisering av ansikter, som vi tenker kan brukes i kriminalsaker. Det ville vært en fordel om journalistikken kan kommunisere ved hjelp av disse nye verktøyene, på en måte som ikke er etisk uholdbar. Men det ville nok kreve en endring i tankesettet til journalistene, og en revisjon av den nåværende Vær Varsom-plakaten, fortsetter Nyre.</p>
+<p>Prosopo er et delprosjekt innen VisMedia ved Universitetet i Bergen. VisMedia har som m&aring;l &aring; utforske de visuelle mediene ut i fra et &ldquo;responsible research and innovation&rdquo;-perspektiv (RRI-perspektiv), eller det som kalles &ldquo;ansvarlig&rdquo; forskning.</p>
+<p>Det finnes en rekke kriterier for hva som faller inn under denne typen forskning. Blant annet forventes det at forskningen har en god dialog med andre samfunnsinteresser, for eksempel journalistikk, og tar sjansen p&aring; &aring; blande de vitenskapelige metodene sammen med innspillene fra samfunnet.</p>
+<p>Professor Lars Nyre er leder for delprosjektet Prosopo. Han har forst&aring;else for at man kan stille seg sp&oslash;rsm&aring;l med hva som er det ansvarlige aspektet ved Prosopo, og at det kan virke uansvarlig &aring; fors&oslash;ke og bryte med pressens etiske normer.</p>
+<p>Han forteller at sosiale medier som Snapchat allerede bruker verkt&oslash;y basert p&aring; kunstig intelligens for &aring; forvrenge ansikter, og at andre sosiale medier ogs&aring; er i ferd med &aring; ta i bruk visuelle manipulasjonsverkt&oslash;y.</p>
+<p>&ndash; Prosopo tar disse teknologiene p&aring; st&oslash;rste alvor, og utforsker om de kan brukes til beste for journalistikken. S&aring; langt har vi testet en teknologi for anonymisering av ansikter, som vi tenker kan brukes i kriminalsaker. Det ville v&aelig;rt en fordel om journalistikken kan kommunisere ved hjelp av disse nye verkt&oslash;yene, p&aring; en m&aring;te som ikke er etisk uholdbar. Men det ville nok kreve en endring i tankesettet til journalistene, og en revisjon av den n&aring;v&aelig;rende V&aelig;r Varsom-plakaten, fortsetter Nyre.</p>
 <p>Midtun fremhever i likhet med Nyre at teknologien som brukes ikke er ny.</p>
-<p>– Det er verdt å nevne at applikasjonen ikke er banebrytende i seg selv, denne teknologien eksisterer allerede, men det er satt sammen på en ny måte og brukt i et nytt domene, sier han.</p>
+<p>&ndash; Det er verdt &aring; nevne at applikasjonen ikke er banebrytende i seg selv, denne teknologien eksisterer allerede, men det er satt sammen p&aring; en ny m&aring;te og brukt i et nytt domene, sier han.</p>
 </div>
 </div>
 </div>
-<figure id="attachment_910" aria-describedby="caption-attachment-910" style="width: 1024px" class="wp-caption alignnone"><img decoding="async" class="size-large wp-image-910 lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAJVAQMAAAB6QBW+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAABhSURBVBgZ7cExAQAAAMIg+6deDB9gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwFizkAAGCyx3qAAAAAElFTkSuQmCC" alt="" width="1024" height="597" data-src="/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1024x597.jpg" data-srcset="/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1024x597.jpg 1024w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-300x175.jpg 300w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-768x448.jpg 768w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1536x896.jpg 1536w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-2048x1194.jpg 2048w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06.jpg 2236w" data-sizes="auto" data-eio-rwidth="1024" data-eio-rheight="597"><noscript><img decoding="async" class="size-large wp-image-910" src="/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1024x597.jpg" alt="" width="1024" height="597" srcset="/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1024x597.jpg 1024w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-300x175.jpg 300w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-768x448.jpg 768w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1536x896.jpg 1536w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-2048x1194.jpg 2048w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06.jpg 2236w" sizes="(max-width: 1024px) 100vw, 1024px" data-eio="l"></noscript>
-<figcaption id="caption-attachment-910" class="wp-caption-text">EKSEMPEL: Skuespilleren Bruce Willis er her anonymisert ved hjelp av Prosopo. Til venstre er det originale bildet, mens bildet i midten er 50% anonymisert. Til høyre er den fullstendige anonymiseringen.</figcaption></figure>
+<figure id="attachment_910" aria-describedby="caption-attachment-910" style="width: 1024px" class="wp-caption alignnone"><picture><source srcset="/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1024x597.webp 1024w,/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-300x175.webp 300w,/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-768x448.webp 768w,/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1536x896.webp 1536w,/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-2048x1194.webp 2048w,/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06.webp 2236w" sizes="auto, (max-width: 1024px) 100vw, 1024px" type="image/webp"><img src="/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1024x597.jpg" height="597" width="1024" srcset="/teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1024x597.jpg 1024w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-300x175.jpg 300w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-768x448.jpg 768w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-1536x896.jpg 1536w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06-2048x1194.jpg 2048w, /teklab-static-test/wp-content/uploads/Skjermbilde-2017-10-03-kl.-17.28.06.jpg 2236w" sizes="auto, (max-width: 1024px) 100vw, 1024px" class="size-large wp-image-910 sp-no-webp" alt="" loading="lazy" decoding="async"> </source></picture><figcaption id="caption-attachment-910" class="wp-caption-text">EKSEMPEL: Skuespilleren Bruce Willis er her anonymisert ved hjelp av Prosopo. Til venstre er det originale bildet, mens bildet i midten er 50% anonymisert. Til h&oslash;yre er den fullstendige anonymiseringen.</figcaption></figure>
 <div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_6">
-<h2>Gjenstår videre utvikling</h2>
-<p>Joar Midtun, ferdig utdannet masterstudent i informasjonsvitenskap, har vært med på å utvikle prototypens teknologi. Han mener teknologien bør utvikles videre.</p>
-<p>– Når man kun bruker disse punktene vil man aldri kunne anonymisere noe annet enn det som er akkurat innenfor disse punktene. Disse er enkle å finne fordi det er likt hos alle, men  hår er problematisk fordi det finnes så utrolig mange hårfrisyrer, forteller han.</p>
-<p>Prototypen er derfor ikke optimal på nåværende tidspunkt, spesielt fordi den kun tar hensyn til punktene innenfor munnen, øyenbrynene, øynene og kjevelinjen. Den bør ta hensyn til flere punkter enn dette, mener Midtun.</p>
-<p>– Denne prototypen klarer stort sett å lage realistiske ansikt, men de blir lett gjenkjennelige ettersom den ikke tar stilling til hår, bakgrunn eller klær, forteller han.</p>
+<h2>Gjenst&aring;r videre utvikling</h2>
+<p>Joar Midtun, ferdig utdannet masterstudent i informasjonsvitenskap, har v&aelig;rt med p&aring; &aring; utvikle prototypens teknologi. Han mener teknologien b&oslash;r utvikles videre.</p>
+<p>&ndash; N&aring;r man kun bruker disse punktene vil man aldri kunne anonymisere noe annet enn det som er akkurat innenfor disse punktene. Disse er enkle &aring; finne fordi det er likt hos alle, men &nbsp;h&aring;r er problematisk fordi det finnes s&aring; utrolig mange h&aring;rfrisyrer, forteller han.</p>
+<p>Prototypen er derfor ikke optimal p&aring; n&aring;v&aelig;rende tidspunkt, spesielt fordi den kun tar hensyn til punktene innenfor munnen, &oslash;yenbrynene, &oslash;ynene og kjevelinjen. Den b&oslash;r ta hensyn til flere punkter enn dette, mener Midtun.</p>
+<p>&ndash; Denne prototypen klarer stort sett &aring; lage realistiske ansikt, men de blir lett gjenkjennelige ettersom den ikke tar stilling til h&aring;r, bakgrunn eller kl&aelig;r, forteller han.</p>
 </div>
-</span></div>
-<div id="code_block-97-339" class="ct-code-block"><hr></div>
-<div id="text_block-101-339" class="ct-text-block">Publisert: <span id="span-103-339" class="ct-span">2. oktober 2017</span>
-</div>
-</div>
-<div id="div_block-19-274" class="ct-div-block"><div id="code_block-120-339" class="ct-code-block">
-<!-- Start Repeater -->
+</span></div><div id="code_block-97-339" class="ct-code-block"><hr></div><div id="text_block-101-339" class="ct-text-block">Publisert: <span id="span-103-339" class="ct-span">2. oktober 2017</span></div></div><div id="div_block-19-274" class="ct-div-block"><div id="code_block-120-339" class="ct-code-block"><!-- Start Repeater -->
 
 
 	<div class="relatert_wrapper">	
-      <a class="relatert_link" href="/teklab-static-test/artikler/a-spille-resident-evil-pa-tv-sammenlignet-med-virtual-reality/">
-      <img class="relatert_image lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAIyAQAAAABwCt20AAAAAnRSTlMAAHaTzTgAAABbSURBVHja7cExAQAAAMKg9U9tDB+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgYxSrAAEXA1udAAAAAElFTkSuQmCC" data-src="/teklab-static-test/wp-content/uploads/residence.jpg" decoding="async" data-eio-rwidth="1000" data-eio-rheight="562"><noscript><img class="relatert_image" src="/teklab-static-test/wp-content/uploads/residence.jpg" data-eio="l"></noscript>
+      <a class="relatert_link" href="/teklab-static-test/artikler/sluttrapport-for-teklab-bedrift-2022-2024/">
+      <img class="relatert_image" src="/teklab-static-test/wp-content/uploads/2021/02/teklabkopplilla.jpg">
 			<h3 class="relatert_stikktittel">
 				 			</h3>			
       		<h3 class="relatert_tittel">
-				 Å spille Resident Evil på TV sammenlignet med Virtual Reality			</h3>
+				 Sluttrapport for TekLab Bedrift (2022-2025)			</h3>
 		      </a>
 	</div>
 	<div class="relatert_wrapper">	
-      <a class="relatert_link" href="/teklab-static-test/artikler/norsk-versjon-av-inject-snart-klar-for-testing/">
-      <img class="relatert_image lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAS2AQAAAADkEolGAAAAAnRSTlMAAHaTzTgAAAExSURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgxQBvkgABht/UnwAAAABJRU5ErkJggg==" data-src="/teklab-static-test/wp-content/uploads/kos-og-jeremy.jpg" decoding="async" data-eio-rwidth="2560" data-eio-rheight="1608"><noscript><img class="relatert_image" src="/teklab-static-test/wp-content/uploads/kos-og-jeremy.jpg" data-eio="l"></noscript>
+      <a class="relatert_link" href="/teklab-static-test/artikler/fa-lyden-ut-av-arkivet-og-inn-i-samtida/">
+      <img class="relatert_image" src="/teklab-static-test/wp-content/uploads/2021/02/Bilete_1-scaled_pink.jpg">
 			<h3 class="relatert_stikktittel">
-				 			</h3>			
+				 Doktorgradsprosjekt:			</h3>			
       		<h3 class="relatert_tittel">
-				 Norsk versjon av INJECT snart klar for testing			</h3>
+				 F&aring; lyden ut av arkivet og inn i samtida			</h3>
 		      </a>
 	</div>
 	<div class="relatert_wrapper">	
-      <a class="relatert_link" href="/teklab-static-test/artikler/runde-2-for-diskutek/">
-      <img class="relatert_image lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ6AQAAAACNYF3lAAAAAnRSTlMAAHaTzTgAAAEUSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4NEA+scAAc+fcL0AAAAASUVORK5CYII=" data-src="/teklab-static-test/wp-content/uploads/8.jpg" decoding="async" data-eio-rwidth="2560" data-eio-rheight="1443"><noscript><img class="relatert_image" src="/teklab-static-test/wp-content/uploads/8.jpg" data-eio="l"></noscript>
+      <a class="relatert_link" href="/teklab-static-test/artikler/augmented-journalism-workshops-to-explore-news-work-in-the-age-of-automation/">
+      <img class="relatert_image" src="/teklab-static-test/wp-content/uploads/AJ-About-Article-2.png">
 			<h3 class="relatert_stikktittel">
 				 			</h3>			
       		<h3 class="relatert_tittel">
-				 Runde to for Diskutek			</h3>
+				 Augmented Journalism: workshops to explore news work in the age of automation			</h3>
 		      </a>
 	</div>
 	<div class="relatert_wrapper">	
-      <a class="relatert_link" href="/teklab-static-test/artikler/tor-du-a-ta-pa-deg-vr-drakta/">
-      <img class="relatert_image lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABBoAAAJQAQAAAAAItDrCAAAAAnRSTlMAAHaTzTgAAABjSURBVHja7cExAQAAAMKg9U9tBn+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgMM58AAa9ZOiwAAAAASUVORK5CYII=" data-src="/teklab-static-test/wp-content/uploads/1352161.jpg" decoding="async" data-eio-rwidth="1050" data-eio-rheight="592"><noscript><img class="relatert_image" src="/teklab-static-test/wp-content/uploads/1352161.jpg" data-eio="l"></noscript>
+      <a class="relatert_link" href="/teklab-static-test/artikler/new-research-article-about-how-to-prototype-vr-storytelling/">
+      <img class="relatert_image" src="/teklab-static-test/wp-content/uploads/Main-photo.jpeg">
 			<h3 class="relatert_stikktittel">
-				 			</h3>			
+				 UiB:			</h3>			
       		<h3 class="relatert_tittel">
-				 Tør du å ta på deg VR-drakta?			</h3>
+				 Research article about how to prototype documentary stories for VR			</h3>
 		      </a>
 	</div>
-</div></div>
-</div>
-</div></section><footer id="section-29-28" class=" ct-section"><div class="ct-section-inner-wrap">
-<div id="new_columns-129-28" class="ct-new-columns">
-<div id="div_block-131-28" class="ct-div-block">
-<h5 id="headline-133-28" class="ct-headline">Kontakt oss</h5>
-<div id="text_block-154-28" class="ct-text-block">Professor Lars Nyre:<br><a href="mailto:lars.nyre@uib.no">lars.nyre@uib.no</a><br>
-</div>
-</div>
-<div id="div_block-130-28" class="ct-div-block">
-<h5 id="headline-138-28" class="ct-headline">Besøksadresse</h5>
-<div id="text_block-139-28" class="ct-text-block">Media City Bergen<br>Lars Hilles gate 30, 5007 Bergen<br>
-</div>
-</div>
-<div id="div_block-132-28" class="ct-div-block">
-<h5 id="headline-140-28" class="ct-headline">Følg oss<br>
-</h5>
-<div id="_social_icons-145-28" class="oxy-social-icons">
-<a href="http://facebook.com/TekLabUiB/" target="_blank" class="oxy-social-icons-facebook"><svg><title>Visit our Facebook</title>
-<use xlink:href="#oxy-social-icons-icon-facebook-blank"></use></svg></a><a href="https://www.instagram.com/teklab.norge/" target="_blank" class="oxy-social-icons-instagram"><svg><title>Visit our Instagram</title>
-<use xlink:href="#oxy-social-icons-icon-instagram-blank"></use></svg></a><a href="https://twitter.com/TeklabUib" target="_blank" class="oxy-social-icons-twitter"><svg><title>Visit our Twitter</title>
-<use xlink:href="#oxy-social-icons-icon-twitter-blank"></use></svg></a><a href="https://www.linkedin.com/company/teklab-norge" target="_blank" class="oxy-social-icons-linkedin"><svg><title>Visit our LinkedIn</title>
-<use xlink:href="#oxy-social-icons-icon-linkedin-blank"></use></svg></a><a href="https://www.youtube.com/channel/UCh59RrMgN_-XYa3NzgWwY8Q" target="_blank" class="oxy-social-icons-youtube"><svg><title>Visit our YouTube channel</title>
-<use xlink:href="#oxy-social-icons-icon-youtube-blank"></use></svg></a>
-</div>
-</div>
-</div>
-<div id="new_columns-212-28" class="ct-new-columns">
-<div id="div_block-213-28" class="ct-div-block">
-<h5 id="headline-190-28" class="ct-headline">Postadresse</h5>
-<div id="text_block-186-28" class="ct-text-block">Universitetet i Bergen<br>TekLab v/Institutt for informasjons- <br>og medievitenskap<br>Postboks 7802<br>5020 BERGEN</div>
-</div>
-<div id="div_block-214-28" class="ct-div-block">
-<img id="image-151-28" alt="Universitetet i bergen" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABqYAAAEnAQAAAADj3c9QAAAAAnRSTlMAAHaTzTgAAABUSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4M9poAAQmbdG0AAAAASUVORK5CYII=" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/UiBlogo_gray_v.png" decoding="async" data-eio-rwidth="1702" data-eio-rheight="295"><noscript><img id="image-151-28" alt="Universitetet i bergen" src="/teklab-static-test/wp-content/uploads/UiBlogo_gray_v.png" class="ct-image" data-eio="l"></noscript>
-</div>
-<div id="div_block-215-28" class="ct-div-block">
-<img id="image-178-28" alt="Logo: Direktoratet for høyere utdanning og kompetanse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABhkAAAHVAQAAAADEeqf2AAAAAnRSTlMAAHaTzTgAAABwSURBVHja7cGBAAAAAMOg+VPf4ARVAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAMWj4AAGU33xBAAAAAElFTkSuQmCC" class="ct-image lazyload" data-src="/teklab-static-test/wp-content/uploads/HKDir_transparent.png" decoding="async" data-eio-rwidth="1561" data-eio-rheight="469"><noscript><img id="image-178-28" alt="Logo: Direktoratet for høyere utdanning og kompetanse" src="/teklab-static-test/wp-content/uploads/HKDir_transparent.png" class="ct-image" data-eio="l"></noscript>
-</div>
-</div>
-</div></footer><footer id="section-241-28" class=" ct-section"><div class="ct-section-inner-wrap"><div id="new_columns-227-28" class="ct-new-columns">
-<div id="div_block-228-28" class="ct-div-block"></div>
-<div id="div_block-231-28" class="ct-div-block"><a id="link_text-235-28" class="ct-link-text" href="/teklab-static-test/#gdpr_cookie_modal">Informasjonskapsler og personvern</a></div>
-<div id="div_block-233-28" class="ct-div-block"></div>
-</div></div></footer>	<!-- WP_FOOTER -->
-<script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/twentytwentythree\/*","\/wp-content\/themes\/oxygen-is-not-a-theme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script>
-
-  <!--copyscapeskip-->
-  <aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-light-scheme gdpr_infobar_postion_bottom" aria-label="GDPR Infokapsel-banner" style="display: none;">
-    <div class="moove-gdpr-info-bar-container">
-      <div class="moove-gdpr-info-bar-content">
-        
-<div class="moove-gdpr-cookie-notice">
-  <p>We are using cookies to give you the best experience on our website.</p>
-<p>You can find out more about which cookies we are using or switch them off in <button aria-haspopup="true" data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</button>.</p>
-</div>
-<!--  .moove-gdpr-cookie-notice -->        
-<div class="moove-gdpr-button-holder">
-		  <button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept">Accept</button>
-	  				<button class="mgbutton moove-gdpr-infobar-reject-btn gdpr-fbo-1 " aria-label="Reject">Reject</button>
-			</div>
-<!--  .button-container -->      </div>
-      <!-- moove-gdpr-info-bar-content -->
-    </div>
-    <!-- moove-gdpr-info-bar-container -->
-  </aside>
-  <!-- #moove_gdpr_cookie_info_bar -->
-  <!--/copyscapeskip-->
+</div></div></div></div></section><footer id="section-29-28" class=" ct-section"><div class="ct-section-inner-wrap"><div id="new_columns-129-28" class="ct-new-columns"><div id="div_block-131-28" class="ct-div-block"><h5 id="headline-133-28" class="ct-headline">Kontakt oss</h5><div id="text_block-154-28" class="ct-text-block">Professor Lars Nyre:<br><a href="mailto:lars.nyre@uib.no">lars.nyre@uib.no</a><br></div></div><div id="div_block-130-28" class="ct-div-block"><h5 id="headline-138-28" class="ct-headline">Bes&oslash;ksadresse</h5><div id="text_block-139-28" class="ct-text-block">Media City Bergen<br>Lars Hilles gate 30, 5007 Bergen<br></div></div><div id="div_block-132-28" class="ct-div-block"><h5 id="headline-140-28" class="ct-headline">F&oslash;lg oss<br></h5><div id="_social_icons-145-28" class="oxy-social-icons"><a href="http://facebook.com/TekLabUiB/" target="_blank" class="oxy-social-icons-facebook"><svg><title>Visit our Facebook</title><use xlink:href="#oxy-social-icons-icon-facebook-blank"></use></svg></a><a href="https://www.instagram.com/teklab.norge/" target="_blank" class="oxy-social-icons-instagram"><svg><title>Visit our Instagram</title><use xlink:href="#oxy-social-icons-icon-instagram-blank"></use></svg></a><a href="https://twitter.com/TeklabUib" target="_blank" class="oxy-social-icons-twitter"><svg><title>Visit our Twitter</title><use xlink:href="#oxy-social-icons-icon-twitter-blank"></use></svg></a><a href="https://www.linkedin.com/company/teklab-norge" target="_blank" class="oxy-social-icons-linkedin"><svg><title>Visit our LinkedIn</title><use xlink:href="#oxy-social-icons-icon-linkedin-blank"></use></svg></a><a href="https://www.youtube.com/channel/UCh59RrMgN_-XYa3NzgWwY8Q" target="_blank" class="oxy-social-icons-youtube"><svg><title>Visit our YouTube channel</title><use xlink:href="#oxy-social-icons-icon-youtube-blank"></use></svg></a></div></div></div><div id="new_columns-212-28" class="ct-new-columns"><div id="div_block-213-28" class="ct-div-block"><h5 id="headline-190-28" class="ct-headline">Postadresse</h5><div id="text_block-186-28" class="ct-text-block">Universitetet i Bergen<br>TekLab v/Institutt for informasjons- <br>og medievitenskap<br>Postboks 7802<br>5020 BERGEN</div></div><div id="div_block-214-28" class="ct-div-block"><picture><source srcset="/teklab-static-test/wp-content/uploads/UiBlogo_gray_v.webp " type="image/webp"><img src="/teklab-static-test/wp-content/uploads/UiBlogo_gray_v.png" id="image-151-28" class="ct-image sp-no-webp" alt="Universitetet i bergen"> </source></picture></div><div id="div_block-215-28" class="ct-div-block"><picture><source srcset="/teklab-static-test/wp-content/uploads/HKDir_transparent.webp " type="image/webp"><img src="/teklab-static-test/wp-content/uploads/HKDir_transparent.png" id="image-178-28" class="ct-image sp-no-webp" alt="Logo: Direktoratet for h&oslash;yere utdanning og kompetanse"> </source></picture></div></div></div></footer><footer id="section-241-28" class=" ct-section"><div class="ct-section-inner-wrap"><div id="new_columns-227-28" class="ct-new-columns"><div id="div_block-228-28" class="ct-div-block"></div><div id="div_block-231-28" class="ct-div-block"><a id="link_text-235-28" class="ct-link-text" href="/teklab-static-test/#gdpr_cookie_modal">Informasjonskapsler og personvern</a></div><div id="div_block-233-28" class="ct-div-block"></div></div></div></footer>	<!-- WP_FOOTER -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/twentytwentythree\/*","\/wp-content\/themes\/oxygen-is-not-a-theme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
         <span class="ssp-id" style="display:none">908</span>
 		<span style="display:none">            <div class="ssp-search">
                 <form class="search-form">
@@ -453,18 +331,37 @@
                         <div class="search-input-container">
                             <input class="search-input fuse-search" name="search-input" placeholder="Search" autocomplete="off" data-noresult="No results found.">
                             <div class="search-auto-complete"></div>
-                            <button type="submit" class="search-submit">
-                                <svg viewbox="0 0 24 24">
-                                    <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
-                                </svg>
-                            </button>
-                        </div>
+							                        </div>
                     </div>
                 </form>
                 <div class="result"></div>
             </div>
-			</span>
-		<script type="text/javascript">jQuery(document).ready(function() {
+			</span>	<!--copyscapeskip-->
+	<aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-light-scheme gdpr_infobar_postion_bottom" aria-label="GDPR Infokapsel-banner" style="display: none;">
+	<div class="moove-gdpr-info-bar-container">
+		<div class="moove-gdpr-info-bar-content">
+		
+<div class="moove-gdpr-cookie-notice">
+  <p>We are using cookies to give you the best experience on our website.</p>
+<p>You can find out more about which cookies we are using or switch them off in <button aria-haspopup="true" data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</button>.</p>
+</div>
+<!--  .moove-gdpr-cookie-notice -->
+		
+<div class="moove-gdpr-button-holder">
+			<button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept">Accept</button>
+						<button class="mgbutton moove-gdpr-infobar-reject-btn gdpr-fbo-1 " aria-label="Reject">Reject</button>
+			</div>
+<!--  .button-container -->
+		</div>
+		<!-- moove-gdpr-info-bar-content -->
+	</div>
+	<!-- moove-gdpr-info-bar-container -->
+	</aside>
+	<!-- #moove_gdpr_cookie_info_bar -->
+	<!--/copyscapeskip-->
+
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
 				jQuery('body').on('click', '.oxy-menu-toggle', function() {
 					jQuery(this).parent('.oxy-nav-menu').toggleClass('oxy-nav-menu-open');
 					jQuery('body').toggleClass('oxy-nav-menu-prevent-overflow');
@@ -477,7 +374,8 @@
 					jQuery('html').removeClass('oxy-nav-menu-prevent-overflow');
 					jQuery(this).click();
 				});
-			});</script>
+			});
+		</script>
 
 	
 		<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -547,91 +445,100 @@
 		   </defs>
 		</svg>
 	
-	<script id="eio-lazy-load-js-before">var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0,"use_dpr":1};</script>
-<script src="/teklab-static-test/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js" id="eio-lazy-load-js" async data-wp-strategy="async"></script>
+	<script src="/teklab-static-test/wp-content/plugins/simply-static-pro/assets/ssp-form-webhook-public.js" id="ssp-form-webhook-public-js"></script>
 <script src="/teklab-static-test/wp-content/plugins/simply-static-pro/assets/fuse.js" id="ssp-fuse-js"></script>
 <script id="ssp-search-js-extra">
-var ssp_search = {"html":"            <div class=\"ssp-search\">\n                <form class=\"search-form\">\n                    <div class=\"form-row\">\n                        <div class=\"search-input-container\">\n                            <input class=\"search-input fuse-search\" name=\"search-input\"\n                                   placeholder=\"Search\"\n                                   autocomplete=\"off\"\n                                   data-noresult=\"No results found.\">\n                            <div class=\"search-auto-complete\"><\/div>\n                            <button type='submit' class='search-submit'>\n                                <svg viewBox='0 0 24 24'>\n                                    <path d='M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z'\/>\n                                <\/svg>\n                            <\/button>\n                        <\/div>\n                    <\/div>\n                <\/form>\n                <div class=\"result\"><\/div>\n            <\/div>\n\t\t\t","use_selector":"1"};
+var ssp_search = {"html":"            <div class=\"ssp-search\">\n                <form class=\"search-form\">\n                    <div class=\"form-row\">\n                        <div class=\"search-input-container\">\n                            <input class=\"search-input fuse-search\" name=\"search-input\"\n                                   placeholder=\"Search\"\n                                   autocomplete=\"off\"\n                                   data-noresult=\"No results found.\">\n                            <div class=\"search-auto-complete\"><\/div>\n\t\t\t\t\t\t\t                        <\/div>\n                    <\/div>\n                <\/form>\n                <div class=\"result\"><\/div>\n            <\/div>\n\t\t\t","use_selector":"1"};
 </script>
 <script src="/teklab-static-test/wp-content/plugins/simply-static-pro/assets/ssp-search.js" id="ssp-search-js"></script>
-<script id="moove_gdpr_frontend-js-extra">var moove_frontend_gdpr_scripts = {"ajaxurl":"\/teklab-static-test\/wp-admin\/admin-ajax.php","post_id":"908","plugin_dir":"\/teklab-static-test\/wp-content\/plugins\/gdpr-cookie-compliance","show_icons":"all","is_page":"","ajax_cookie_removal":"false","strict_init":"1","enabled_default":{"third_party":0,"advanced":0},"geo_location":"false","force_reload":"false","is_single":"1","hide_save_btn":"false","current_user":"0","cookie_expiration":"365","script_delay":"2000","close_btn_action":"1","close_btn_rdr":"","scripts_defined":"{\"cache\":true,\"header\":\"\",\"body\":\"\",\"footer\":\"\",\"thirdparty\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"},\"advanced\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"}}","gdpr_scor":"true","wp_lang":"","wp_consent_api":"false"};</script>
+<script id="moove_gdpr_frontend-js-extra">
+var moove_frontend_gdpr_scripts = {"ajaxurl":"\/teklab-static-test\/wp-admin\/admin-ajax.php","post_id":"908","plugin_dir":"\/teklab-static-test\/wp-content\/plugins\/gdpr-cookie-compliance","show_icons":"all","is_page":"","ajax_cookie_removal":"false","strict_init":"2","enabled_default":{"third_party":0,"advanced":0,"performance":0,"preference":0},"geo_location":"false","force_reload":"false","is_single":"1","hide_save_btn":"false","current_user":"0","cookie_expiration":"365","script_delay":"2000","close_btn_action":"1","close_btn_rdr":"","scripts_defined":"{\"cache\":true,\"header\":\"\",\"body\":\"\",\"footer\":\"\",\"thirdparty\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"},\"advanced\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"}}","gdpr_scor":"true","wp_lang":"","wp_consent_api":"false"};
+</script>
 <script src="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js" id="moove_gdpr_frontend-js"></script>
-<script id="moove_gdpr_frontend-js-after">var gdpr_consent__strict = "false"
+<script id="moove_gdpr_frontend-js-after">
+var gdpr_consent__strict = "true"
 var gdpr_consent__thirdparty = "false"
 var gdpr_consent__advanced = "false"
-var gdpr_consent__cookies = ""</script>
+var gdpr_consent__performance = "false"
+var gdpr_consent__preference = "false"
+var gdpr_consent__cookies = "strict"
+</script>
 <script type="text/javascript" id="ct-footer-js"></script>
     
-  <!--copyscapeskip-->
-  <!-- V1 -->
-  <dialog id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" aria-modal="true" aria-label="Skjermboks for GDPR-innstillinger">
-    <div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
-          
-        <button class="moove-gdpr-modal-close" autofocus aria-label="Lukk GDPR Infokapsel-innstillinger">
-          <span class="gdpr-sr-only">Lukk GDPR Infokapsel-innstillinger</span>
-          <span class="gdpr-icon moovegdpr-arrow-close"></span>
-        </button>
-            <div class="moove-gdpr-modal-left-content">
-        
+	<!--copyscapeskip-->
+	<!-- V1 -->
+	<dialog id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" aria-modal="true" aria-label="Skjermboks for GDPR-innstillinger">
+	<div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
+		    
+		<button class="moove-gdpr-modal-close" autofocus aria-label="Lukk GDPR Infokapsel-innstillinger">
+			<span class="gdpr-sr-only">Lukk GDPR Infokapsel-innstillinger</span>
+			<span class="gdpr-icon moovegdpr-arrow-close"></span>
+		</button>
+				<div class="moove-gdpr-modal-left-content">
+		
 <div class="moove-gdpr-company-logo-holder">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAADpAQMAAABWXc0gAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAhSURBVBgZ7cEBDQAAAMIg+6d+DjdgAAAAAAAAAAAAAA8CKPUAAWnFi1QAAAAASUVORK5CYII=" alt="TekLab" width="350" height="233" class="img-responsive lazyload" data-src="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png" decoding="async" data-eio-rwidth="350" data-eio-rheight="233"><noscript><img src="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png" alt="TekLab" width="350" height="233" class="img-responsive" data-eio="l"></noscript>
+	<img src="/teklab-static-test/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png" alt="TekLab" width="350" height="233" class="img-responsive">
 </div>
-<!--  .moove-gdpr-company-logo-holder -->        <ul id="moove-gdpr-menu">
-          
+<!--  .moove-gdpr-company-logo-holder -->
+		<ul id="moove-gdpr-menu">
+			
 <li class="menu-item-on menu-item-privacy_overview menu-item-selected">
-  <button data-href="#privacy_overview" class="moove-gdpr-tab-nav" aria-label="Personvernoversikt">
-    <span class="gdpr-nav-tab-title">Personvernoversikt</span>
-  </button>
+	<button data-href="#privacy_overview" class="moove-gdpr-tab-nav" aria-label="Personvernoversikt">
+	<span class="gdpr-nav-tab-title">Personvernoversikt</span>
+	</button>
 </li>
 
-  <li class="menu-item-strict-necessary-cookies menu-item-off">
-    <button data-href="#strict-necessary-cookies" class="moove-gdpr-tab-nav" aria-label="Strengt nødvendige infokapsler">
-      <span class="gdpr-nav-tab-title">Strengt nødvendige infokapsler</span>
-    </button>
-  </li>
+	<li class="menu-item-strict-necessary-cookies menu-item-off">
+	<button data-href="#strict-necessary-cookies" class="moove-gdpr-tab-nav" aria-label="Strengt n&oslash;dvendige infokapsler">
+		<span class="gdpr-nav-tab-title">Strengt n&oslash;dvendige infokapsler</span>
+	</button>
+	</li>
 
 
 
 
-        </ul>
-        
+
+		</ul>
+		
 <div class="moove-gdpr-branding-cnt">
-  		<a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" rel="noopener noreferrer" target="_blank" class="moove-gdpr-branding">Powered by&nbsp; <span>GDPR Infokapsler-samsvar</span></a>
+			<a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" rel="noopener noreferrer" target="_blank" class="moove-gdpr-branding">Powered by&nbsp; <span>GDPR Infokapsler-samsvar</span></a>
 		</div>
-<!--  .moove-gdpr-branding -->      </div>
-      <!--  .moove-gdpr-modal-left-content -->
-      <div class="moove-gdpr-modal-right-content">
-        <div class="moove-gdpr-modal-title">
-           
-        </div>
-        <!-- .moove-gdpr-modal-ritle -->
-        <div class="main-modal-content">
+<!--  .moove-gdpr-branding -->
+		</div>
+		<!--  .moove-gdpr-modal-left-content -->
+		<div class="moove-gdpr-modal-right-content">
+		<div class="moove-gdpr-modal-title">
+			 
+		</div>
+		<!-- .moove-gdpr-modal-ritle -->
+		<div class="main-modal-content">
 
-          <div class="moove-gdpr-tab-content">
-            
+			<div class="moove-gdpr-tab-content">
+			
 <div id="privacy_overview" class="moove-gdpr-tab-main">
-      <span class="tab-title">Personvernoversikt</span>
-    <div class="moove-gdpr-tab-main-content">
-  	<p>Dette nettstedet bruker infokapsler slik at vi kan gi deg den best mulige brukeropplevelsen. Infokapsler lagres i nettlesren din og utfører funksjoner som å gjenkjenne deg når du returnerer til nettstedet vårt og hjelper oss forstå hvilke deler av nettstedet du finner interessant og nyttig.</p>
-  	  </div>
-  <!--  .moove-gdpr-tab-main-content -->
+		<span class="tab-title">Personvernoversikt</span>
+		<div class="moove-gdpr-tab-main-content">
+	<p>Dette nettstedet bruker infokapsler slik at vi kan gi deg den best mulige brukeropplevelsen. Infokapsler lagres i nettlesren din og utf&oslash;rer funksjoner som &aring; gjenkjenne deg n&aring;r du returnerer til nettstedet v&aring;rt og hjelper oss forst&aring; hvilke deler av nettstedet du finner interessant og nyttig.</p>
+		</div>
+	<!--  .moove-gdpr-tab-main-content -->
 
 </div>
-<!-- #privacy_overview -->            
+<!-- #privacy_overview -->
+			
   <div id="strict-necessary-cookies" class="moove-gdpr-tab-main" style="display:none">
-    <span class="tab-title">Strengt nødvendige infokapsler</span>
+    <span class="tab-title">Strengt n&oslash;dvendige infokapsler</span>
     <div class="moove-gdpr-tab-main-content">
-      <p>Strengt nødvendige infokapsler må være slått på hele tiden slik at vi kan lagre preferansene dine for infokapselinnstillinger.</p>
-      <div class="moove-gdpr-status-bar ">
+      <p>Strengt n&oslash;dvendige infokapsler m&aring; v&aelig;re sl&aring;tt p&aring; hele tiden slik at vi kan lagre preferansene dine for infokapselinnstillinger.</p>
+      <div class="moove-gdpr-status-bar gdpr-checkbox-disabled checkbox-selected">
         <div class="gdpr-cc-form-wrap">
           <div class="gdpr-cc-form-fieldset">
             <label class="cookie-switch" for="moove_gdpr_strict_cookies">    
-              <span class="gdpr-sr-only">Slå på eller av infokapsler</span>        
-              <input type="checkbox" aria-label="Strengt nødvendige infokapsler" value="check" name="moove_gdpr_strict_cookies" id="moove_gdpr_strict_cookies">
-              <span class="cookie-slider cookie-round gdpr-sr" data-text-enable="Slått på" data-text-disabled="Slått av">
+              <span class="gdpr-sr-only">Sl&aring; p&aring; eller av infokapsler</span>        
+              <input type="checkbox" aria-label="Strengt n&oslash;dvendige infokapsler" disabled checked value="check" name="moove_gdpr_strict_cookies" id="moove_gdpr_strict_cookies">
+              <span class="cookie-slider cookie-round gdpr-sr" data-text-enable="Sl&aring;tt p&aring;" data-text-disabled="Sl&aring;tt av">
                 <span class="gdpr-sr-label">
-                  <span class="gdpr-sr-enable">Slått på</span>
-                  <span class="gdpr-sr-disable">Slått av</span>
+                  <span class="gdpr-sr-enable">Sl&aring;tt p&aring;</span>
+                  <span class="gdpr-sr-disable">Sl&aring;tt av</span>
                 </span>
               </span>
             </label>
@@ -641,39 +548,36 @@ var gdpr_consent__cookies = ""</script>
         <!-- .gdpr-cc-form-wrap -->
       </div>
       <!-- .moove-gdpr-status-bar -->
-              <div class="moove-gdpr-strict-warning-message" style="margin-top: 10px;">
-          <p>Om du slår av denne infokapselen kan vi ikke lagre preferansene dine. Dette betyr at hver gang du besøker dette nettstedet må du slå på eller av infokapsler på nytt.</p>
-        </div>
-        <!--  .moove-gdpr-tab-main-content -->
                                               
     </div>
     <!--  .moove-gdpr-tab-main-content -->
   </div>
   <!-- #strict-necesarry-cookies -->
-            
-            
-            
-          </div>
-          <!--  .moove-gdpr-tab-content -->
-        </div>
-        <!--  .main-modal-content -->
-        <div class="moove-gdpr-modal-footer-content">
-          <div class="moove-gdpr-button-holder">
-			  		<button class="mgbutton moove-gdpr-modal-allow-all button-visible" aria-label="Slå på alle">Slå på alle</button>
-		  					<button class="mgbutton moove-gdpr-modal-save-settings button-visible" aria-label="Lagre innstillingene">Lagre innstillingene</button>
+			
+			
+									
+			</div>
+			<!--  .moove-gdpr-tab-content -->
+		</div>
+		<!--  .main-modal-content -->
+		<div class="moove-gdpr-modal-footer-content">
+			<div class="moove-gdpr-button-holder">
+						<button class="mgbutton moove-gdpr-modal-allow-all button-visible" aria-label="Sl&aring; p&aring; alle">Sl&aring; p&aring; alle</button>
+								<button class="mgbutton moove-gdpr-modal-save-settings button-visible" aria-label="Lagre innstillingene">Lagre innstillingene</button>
 				</div>
-<!--  .moove-gdpr-button-holder -->        </div>
-        <!--  .moove-gdpr-modal-footer-content -->
-      </div>
-      <!--  .moove-gdpr-modal-right-content -->
+<!--  .moove-gdpr-button-holder -->
+		</div>
+		<!--  .moove-gdpr-modal-footer-content -->
+		</div>
+		<!--  .moove-gdpr-modal-right-content -->
 
-      <div class="moove-clearfix"></div>
+		<div class="moove-clearfix"></div>
 
-    </div>
-    <!--  .moove-gdpr-modal-content -->
-  </dialog>
-  <!-- #moove_gdpr_cookie_modal -->
-  <!--/copyscapeskip-->
+	</div>
+	<!--  .moove-gdpr-modal-content -->
+	</dialog>
+	<!-- #moove_gdpr_cookie_modal -->
+	<!--/copyscapeskip-->
 <style type="text/css" id="ct_code_block_css_122">.person {
       display: inline-block;
       margin: 5px;
@@ -704,7 +608,4 @@ max-height:50px;
 }</style>
 <!-- /WP_FOOTER --> 
 </body>
-
-
-<!-- plugin=object-cache-pro client=phpredis metric#hits=6285 metric#misses=24 metric#hit-ratio=99.6 metric#bytes=14741128 metric#prefetches=0 metric#store-reads=212 metric#store-writes=13 metric#store-hits=344 metric#store-misses=16 metric#sql-queries=43 metric#ms-total=3211.72 metric#ms-cache=583.70 metric#ms-cache-avg=2.6058 metric#ms-cache-ratio=18.2 sample#redis-hits=2598818 sample#redis-misses=188300 sample#redis-hit-ratio=93.2 sample#redis-ops-per-sec=206 sample#redis-evicted-keys=0 sample#redis-used-memory=23142920 sample#redis-used-memory-rss=37527552 sample#redis-memory-fragmentation-ratio=1.6 sample#redis-connected-clients=6 sample#redis-tracking-clients=0 sample#redis-rejected-connections=0 sample#redis-keys=6993 -->
-</html>
+</html><!-- plugin=object-cache-pro client=phpredis metric#hits=6684 metric#misses=17 metric#hit-ratio=99.8 metric#bytes=7855092 metric#prefetches=0 metric#store-reads=212 metric#store-writes=6 metric#store-hits=379 metric#store-misses=9 metric#sql-queries=41 metric#ms-total=404.98 metric#ms-cache=50.40 metric#ms-cache-avg=0.2323 metric#ms-cache-ratio=12.5 -->
