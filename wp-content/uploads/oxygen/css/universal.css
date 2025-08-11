@@ -968,6 +968,8 @@ z-index: 1000;
 }
 }
 
+.static-ingress {
+}
 img {
 	max-width: 100% !important;
 }
