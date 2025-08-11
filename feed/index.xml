@@ -12,13 +12,13 @@
 	<atom:link href="/teklab-static-test/feed/" rel="self" type="application/rss+xml" />
 	<link>/teklab-static-test/</link>
 	<description></description>
-	<lastBuildDate>Wed, 14 May 2025 14:50:26 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 10 Aug 2025 20:31:31 +0000</lastBuildDate>
 	<language>nb-NO</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.1</generator>
+	<generator>https://wordpress.org/?v=6.8.2</generator>
 
 <image>
 	<url>/teklab-static-test/wp-content/uploads/cropped-Teklab_logo-32x32.png</url>
@@ -30,4 +30,4 @@
 </channel>
 </rss>
 
-<!-- plugin=object-cache-pro client=phpredis metric#hits=1524 metric#misses=9 metric#hit-ratio=99.4 metric#bytes=14954716 metric#prefetches=0 metric#store-reads=160 metric#store-writes=5 metric#store-hits=231 metric#store-misses=6 metric#sql-queries=28 metric#ms-total=1776.47 metric#ms-cache=231.81 metric#ms-cache-avg=1.4135 metric#ms-cache-ratio=13.1 -->
+<!-- plugin=object-cache-pro client=phpredis metric#hits=1615 metric#misses=7 metric#hit-ratio=99.6 metric#bytes=7855874 metric#prefetches=0 metric#store-reads=162 metric#store-writes=3 metric#store-hits=243 metric#store-misses=4 metric#sql-queries=32 metric#ms-total=892.48 metric#ms-cache=269.37 metric#ms-cache-avg=1.6425 metric#ms-cache-ratio=30.2 -->
