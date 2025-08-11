@@ -29,11 +29,10 @@ if (null !== fuse_config_element) {
     }
 
 
-
     async function loadConfig(callback) {
 
         try {
-            const response = await fetch( config_url, {
+            const response = await fetch(config_url, {
                 headers: {
                     "Content-Type": "application/json",
                 }
@@ -54,7 +53,7 @@ if (null !== fuse_config_element) {
 
     async function loadIndex(callback) {
         try {
-            const response = await fetch( index_url, {
+            const response = await fetch(index_url, {
                 headers: {
                     "Content-Type": "application/json",
                 }
@@ -95,7 +94,7 @@ if (null !== fuse_config_element) {
             }
         }
 
-        if ( null !== fuse ) {
+        if (null !== fuse) {
             fuse.setCollection(searchResults);
         }
     });
@@ -113,7 +112,7 @@ if (null !== fuse_config_element) {
             {
                 keys: keys,
                 shouldSort: true,
-                threshold: 0.5,
+                threshold: config.threshold ? config.threshold : 0.1,
                 maxPatternLength: 50
             }
         );
@@ -121,7 +120,7 @@ if (null !== fuse_config_element) {
         initSearch();
     });
 
-    function FuseSearchForm( el ) {
+    function FuseSearchForm(el) {
         var self = this;
         let input = '';
         let results = [];
@@ -219,7 +218,7 @@ if (null !== fuse_config_element) {
             autoCompleteNode = container.querySelector('.search-auto-complete');
             resultNode = container.querySelector('.result');
 
-            if ( ! searchFormNode ) {
+            if (!searchFormNode) {
                 return;
             }
 
@@ -240,8 +239,8 @@ if (null !== fuse_config_element) {
 
     function handleWindowClick(event) {
         let autocompleters = document.querySelectorAll('.search-auto-complete');
-        if ( autocompleters.length ) {
-            autocompleters.forEach((autocompleteNode) => autocompleteNode.classList.remove('show') );
+        if (autocompleters.length) {
+            autocompleters.forEach((autocompleteNode) => autocompleteNode.classList.remove('show'));
         }
     }
 
@@ -282,9 +281,9 @@ if (null !== fuse_config_element) {
     }
 
     function getRandomId() {
-        var id  = 'search' + Date.now() + ( Math.random() * 100 );
+        var id = 'search' + Date.now() + (Math.random() * 100);
 
-        if ( document.getElementById( id ) ) {
+        if (document.getElementById(id)) {
             id = getRandomId();
         }
 
@@ -295,13 +294,13 @@ if (null !== fuse_config_element) {
         // Holder of search
         var div = document.createElement('div');
         // Random custom ID.š
-        var id  = getRandomId();
+        var id = getRandomId();
         div.setAttribute('id', id);
         div.innerHTML = ssp_search.html;
 
         el.outerHTML = div.outerHTML;
         // Get it by ID to get the DOM element.
-        el = document.getElementById( id );
+        el = document.getElementById(id);
         var form = new FuseSearchForm(el);
     }
 
